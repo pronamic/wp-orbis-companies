@@ -1,0 +1,263 @@
+# Copyright (C) 2016 Pronamic
+# This file is distributed under the Copyright (c) Pronamic.
+msgid ""
+msgstr ""
+"Project-Id-Version: Orbis Companies\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/orbis-companies\n"
+"POT-Creation-Date: 2016-11-29 11:18:34+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-11-29 12:25+0100\n"
+"X-Generator: Poedit 1.7.4\n"
+"Last-Translator: Remco Tolsma <info@remcotolsma.nl>\n"
+"Language-Team: Pronamic <info@pronamic.nl>\n"
+"Language: nl_NL\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: admin/meta-box-company-details.php:32
+msgid "Orbis ID"
+msgstr "Orbis ID"
+
+#: admin/meta-box-company-details.php:40 includes/companies.php:149
+msgid "Registration Number"
+msgstr "Registratienummer"
+
+#: admin/meta-box-company-details.php:48
+msgid "VAT Number"
+msgstr "BTW-nummer"
+
+#: admin/meta-box-company-details.php:56
+msgid "E-Mail"
+msgstr "E-mailadres"
+
+#: admin/meta-box-company-details.php:64
+msgid "Invoice E-Mail"
+msgstr "Factuur e-mailadres"
+
+#: admin/meta-box-company-details.php:72
+msgid "Website"
+msgstr "Website"
+
+#: admin/meta-box-company-details.php:80
+msgid "Addresses"
+msgstr "Adressen"
+
+#: admin/meta-box-company-details.php:85
+#: admin/meta-box-company-details.php:88 includes/companies.php:147
+msgid "Address"
+msgstr "Adres"
+
+#: admin/meta-box-company-details.php:90
+msgid "Postcode"
+msgstr "Postcode"
+
+#: admin/meta-box-company-details.php:91
+msgid "City"
+msgstr "Plaats"
+
+#: admin/meta-box-company-details.php:93
+msgid "Country"
+msgstr "Land"
+
+#: admin/meta-box-company-details.php:98
+msgid "Twitter Username:"
+msgstr "Twitter gebruikersnaam:"
+
+#: admin/meta-box-company-details.php:106
+msgid "Facebook URL:"
+msgstr "Facebook URL:"
+
+#: admin/meta-box-company-details.php:114
+msgid "LinkedIn URL:"
+msgstr "LinkedIn URL:"
+
+#: classes/orbis-companies-plugin.php:53 includes/post.php:7
+#: includes/post.php:9 includes/post.php:21
+msgid "Companies"
+msgstr "Bedrijven"
+
+#: classes/orbis-companies-plugin.php:54
+msgid "Contacts"
+msgstr "Contacten"
+
+#: classes/orbis-companies-plugin.php:57
+msgid "Contact"
+msgstr "Contact"
+
+#: classes/orbis-companies-plugin.php:58
+msgid "Search contact"
+msgstr "Contact zoeken"
+
+#: classes/orbis-companies-plugin.php:59
+msgid "No contacts found."
+msgstr "Geen contacten gevonden"
+
+#: classes/orbis-companies-plugin.php:60
+msgid "Add Contact"
+msgstr "Contact toevoegen"
+
+#: classes/orbis-companies-plugin.php:61
+msgid "New Contact"
+msgstr "Nieuw contact"
+
+#: classes/orbis-companies-plugin.php:62
+msgid "Add New Contact"
+msgstr "Nieuwe contact toevoegen"
+
+#: classes/orbis-companies-plugin.php:65 includes/post.php:10
+msgid "Company"
+msgstr "Bedrijf"
+
+#: classes/orbis-companies-plugin.php:66
+msgid "Search company"
+msgstr "Bedrijf zoeken"
+
+#: classes/orbis-companies-plugin.php:67 includes/post.php:18
+msgid "No companies found."
+msgstr "Geen bedrijven gevonden"
+
+#: classes/orbis-companies-plugin.php:68
+msgid "Add Company"
+msgstr "Bedrijf toevoegen"
+
+#: classes/orbis-companies-plugin.php:69 includes/post.php:14
+msgid "New Company"
+msgstr "Nieuw bedrijf"
+
+#: classes/orbis-companies-plugin.php:70 includes/post.php:12
+msgid "Add New Company"
+msgstr "Nieuw bedrijf toevoegen"
+
+#: includes/companies.php:9
+msgid "Company Details"
+msgstr "Bedrijf details"
+
+#: includes/companies.php:146
+msgid "Title"
+msgstr "Titel"
+
+#: includes/companies.php:148
+msgid "Online"
+msgstr "Online"
+
+#: includes/companies.php:150
+msgid "Author"
+msgstr "Auteur"
+
+#: includes/companies.php:151
+msgid "Comments"
+msgstr "Reacties"
+
+#: includes/companies.php:152
+msgid "Date"
+msgstr "Datum"
+
+#: includes/post.php:13
+msgid "Edit Company"
+msgstr "Bedrijf bewerken"
+
+#: includes/post.php:15
+msgid "All Companies"
+msgstr "Alle bedrijven"
+
+#: includes/post.php:16
+msgid "View Company"
+msgstr "Bedrijf bekijken"
+
+#: includes/post.php:17
+msgid "Search Companies"
+msgstr "Zoek bedrijven"
+
+#: includes/post.php:19
+msgid "No companies found in Trash."
+msgstr "Geen bedrijven gevonden in prullenbak."
+
+#: includes/post.php:20
+msgid "Parent Company:"
+msgstr "Bovenliggend bedrijf:"
+
+#: includes/post.php:43
+msgid "Search Categories"
+msgstr "Zoek categorieën"
+
+#: includes/post.php:44
+msgid "All Categories"
+msgstr "Alle categorieën"
+
+#: includes/post.php:45
+msgid "Parent Category"
+msgstr "Bovenliggende categorie"
+
+#: includes/post.php:46
+msgid "Parent Category:"
+msgstr "Bovenliggende categorie:"
+
+#: includes/post.php:47
+msgid "Edit Category"
+msgstr "Categorie bewerken"
+
+#: includes/post.php:48
+msgid "Update Category"
+msgstr "Categorie bijwerken"
+
+#: includes/post.php:49
+msgid "Add New Category"
+msgstr "Nieuwe categorie"
+
+#: includes/post.php:50
+msgid "New Category Name"
+msgstr "Nieuwe categorie naam"
+
+#: includes/post.php:51
+msgid "Categories"
+msgstr "Categorieën"
+
+#. Plugin Name of the plugin/theme
+msgid "Orbis Companies"
+msgstr "Orbis bedrijven"
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.pronamic.eu/plugins/orbis-companies/"
+msgstr "https://www.pronamic.eu/plugins/orbis-companies/"
+
+#. Description of the plugin/theme
+msgid ""
+"The Orbis Companies plugin extends your Orbis environment with the option "
+"to manage companies."
+msgstr ""
+"De Orbis bedrijven plugin breidt je Orbis omgeving uit met de mogelijkheid "
+"om bedrijven te beheren."
+
+#. Author of the plugin/theme
+msgid "Pronamic"
+msgstr "Pronamic"
+
+#. Author URI of the plugin/theme
+msgid "https://www.pronamic.eu/"
+msgstr "https://www.pronamic.nl/"
+
+#: includes/post.php:11
+msgctxt "orbis_company"
+msgid "Add New"
+msgstr "Nieuw bedrijf"
+
+#: includes/post.php:30
+msgctxt "slug"
+msgid "companies"
+msgstr "bedrijven"
+
+#: includes/post.php:56
+msgctxt "slug"
+msgid "company-category"
+msgstr "bedrijf-categorie"
+
+#: includes/post.php:41
+msgctxt "taxonomy general name"
+msgid "Categories"
+msgstr "Categorieën"
+
+#: includes/post.php:42
+msgctxt "taxonomy singular name"
+msgid "Category"
+msgstr "Categorie"

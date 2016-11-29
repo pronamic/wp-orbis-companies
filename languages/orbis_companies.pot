@@ -1,0 +1,259 @@
+# Copyright (C) 2016 Pronamic
+# This file is distributed under the Copyright (c) Pronamic.
+msgid ""
+msgstr ""
+"Project-Id-Version: Orbis Companies 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/orbis-companies\n"
+"POT-Creation-Date: 2016-11-29 11:18:34+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+
+#: admin/meta-box-company-details.php:32
+msgid "Orbis ID"
+msgstr ""
+
+#: admin/meta-box-company-details.php:40 includes/companies.php:149
+msgid "Registration Number"
+msgstr ""
+
+#: admin/meta-box-company-details.php:48
+msgid "VAT Number"
+msgstr ""
+
+#: admin/meta-box-company-details.php:56
+msgid "E-Mail"
+msgstr ""
+
+#: admin/meta-box-company-details.php:64
+msgid "Invoice E-Mail"
+msgstr ""
+
+#: admin/meta-box-company-details.php:72
+msgid "Website"
+msgstr ""
+
+#: admin/meta-box-company-details.php:80
+msgid "Addresses"
+msgstr ""
+
+#: admin/meta-box-company-details.php:85 admin/meta-box-company-details.php:88
+#: includes/companies.php:147
+msgid "Address"
+msgstr ""
+
+#: admin/meta-box-company-details.php:90
+msgid "Postcode"
+msgstr ""
+
+#: admin/meta-box-company-details.php:91
+msgid "City"
+msgstr ""
+
+#: admin/meta-box-company-details.php:93
+msgid "Country"
+msgstr ""
+
+#: admin/meta-box-company-details.php:98
+msgid "Twitter Username:"
+msgstr ""
+
+#: admin/meta-box-company-details.php:106
+msgid "Facebook URL:"
+msgstr ""
+
+#: admin/meta-box-company-details.php:114
+msgid "LinkedIn URL:"
+msgstr ""
+
+#: classes/orbis-companies-plugin.php:53 includes/post.php:7
+#: includes/post.php:9 includes/post.php:21
+msgid "Companies"
+msgstr ""
+
+#: classes/orbis-companies-plugin.php:54
+msgid "Contacts"
+msgstr ""
+
+#: classes/orbis-companies-plugin.php:57
+msgid "Contact"
+msgstr ""
+
+#: classes/orbis-companies-plugin.php:58
+msgid "Search contact"
+msgstr ""
+
+#: classes/orbis-companies-plugin.php:59
+msgid "No contacts found."
+msgstr ""
+
+#: classes/orbis-companies-plugin.php:60
+msgid "Add Contact"
+msgstr ""
+
+#: classes/orbis-companies-plugin.php:61
+msgid "New Contact"
+msgstr ""
+
+#: classes/orbis-companies-plugin.php:62
+msgid "Add New Contact"
+msgstr ""
+
+#: classes/orbis-companies-plugin.php:65 includes/post.php:10
+msgid "Company"
+msgstr ""
+
+#: classes/orbis-companies-plugin.php:66
+msgid "Search company"
+msgstr ""
+
+#: classes/orbis-companies-plugin.php:67 includes/post.php:18
+msgid "No companies found."
+msgstr ""
+
+#: classes/orbis-companies-plugin.php:68
+msgid "Add Company"
+msgstr ""
+
+#: classes/orbis-companies-plugin.php:69 includes/post.php:14
+msgid "New Company"
+msgstr ""
+
+#: classes/orbis-companies-plugin.php:70 includes/post.php:12
+msgid "Add New Company"
+msgstr ""
+
+#: includes/companies.php:9
+msgid "Company Details"
+msgstr ""
+
+#: includes/companies.php:146
+msgid "Title"
+msgstr ""
+
+#: includes/companies.php:148
+msgid "Online"
+msgstr ""
+
+#: includes/companies.php:150
+msgid "Author"
+msgstr ""
+
+#: includes/companies.php:151
+msgid "Comments"
+msgstr ""
+
+#: includes/companies.php:152
+msgid "Date"
+msgstr ""
+
+#: includes/post.php:13
+msgid "Edit Company"
+msgstr ""
+
+#: includes/post.php:15
+msgid "All Companies"
+msgstr ""
+
+#: includes/post.php:16
+msgid "View Company"
+msgstr ""
+
+#: includes/post.php:17
+msgid "Search Companies"
+msgstr ""
+
+#: includes/post.php:19
+msgid "No companies found in Trash."
+msgstr ""
+
+#: includes/post.php:20
+msgid "Parent Company:"
+msgstr ""
+
+#: includes/post.php:43
+msgid "Search Categories"
+msgstr ""
+
+#: includes/post.php:44
+msgid "All Categories"
+msgstr ""
+
+#: includes/post.php:45
+msgid "Parent Category"
+msgstr ""
+
+#: includes/post.php:46
+msgid "Parent Category:"
+msgstr ""
+
+#: includes/post.php:47
+msgid "Edit Category"
+msgstr ""
+
+#: includes/post.php:48
+msgid "Update Category"
+msgstr ""
+
+#: includes/post.php:49
+msgid "Add New Category"
+msgstr ""
+
+#: includes/post.php:50
+msgid "New Category Name"
+msgstr ""
+
+#: includes/post.php:51
+msgid "Categories"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Orbis Companies"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://www.pronamic.eu/plugins/orbis-companies/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"The Orbis Companies plugin extends your Orbis environment with the option "
+"to manage companies."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Pronamic"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.pronamic.eu/"
+msgstr ""
+
+#: includes/post.php:11
+msgctxt "orbis_company"
+msgid "Add New"
+msgstr ""
+
+#: includes/post.php:30
+msgctxt "slug"
+msgid "companies"
+msgstr ""
+
+#: includes/post.php:56
+msgctxt "slug"
+msgid "company-category"
+msgstr ""
+
+#: includes/post.php:41
+msgctxt "taxonomy general name"
+msgid "Categories"
+msgstr ""
+
+#: includes/post.php:42
+msgctxt "taxonomy singular name"
+msgid "Category"
+msgstr ""
