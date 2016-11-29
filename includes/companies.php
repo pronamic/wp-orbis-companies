@@ -22,9 +22,9 @@ add_action( 'add_meta_boxes', 'orbis_company_add_meta_boxes' );
  * @param array $post
  */
 function orbis_company_details_meta_box() {
-	global $orbis_plugin;
+	global $orbis_companies_plugin;
 
-	$orbis_plugin->plugin_include( 'admin/meta-box-company-details.php' );
+	$orbis_companies_plugin->plugin_include( 'admin/meta-box-company-details.php' );
 }
 
 /**

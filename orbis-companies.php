@@ -28,6 +28,7 @@ require_once 'includes/companies.php';
  */
 function orbis_companies_bootstrap() {
 	// Classes
+	require_once 'classes/orbis-company.php';
 	require_once 'classes/orbis-companies-plugin.php';
 
 	// Initialize
