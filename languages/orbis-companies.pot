@@ -17,7 +17,8 @@ msgstr ""
 msgid "Orbis ID"
 msgstr ""
 
-#: admin/meta-box-company-details.php:40 includes/companies.php:149
+#: admin/meta-box-company-details.php:40
+#: classes/class-admin-company-post-type.php:34
 msgid "Registration Number"
 msgstr ""
 
@@ -42,7 +43,7 @@ msgid "Addresses"
 msgstr ""
 
 #: admin/meta-box-company-details.php:85 admin/meta-box-company-details.php:88
-#: includes/companies.php:147
+#: classes/class-admin-company-post-type.php:32
 msgid "Address"
 msgstr ""
 
@@ -70,145 +71,145 @@ msgstr ""
 msgid "LinkedIn URL:"
 msgstr ""
 
-#: classes/orbis-companies-plugin.php:53 includes/post.php:7
-#: includes/post.php:9 includes/post.php:21
-msgid "Companies"
-msgstr ""
-
-#: classes/orbis-companies-plugin.php:54
-msgid "Contacts"
-msgstr ""
-
-#: classes/orbis-companies-plugin.php:57
-msgid "Contact"
-msgstr ""
-
-#: classes/orbis-companies-plugin.php:58
-msgid "Search contact"
-msgstr ""
-
-#: classes/orbis-companies-plugin.php:59
-msgid "No contacts found."
-msgstr ""
-
-#: classes/orbis-companies-plugin.php:60
-msgid "Add Contact"
-msgstr ""
-
-#: classes/orbis-companies-plugin.php:61
-msgid "New Contact"
-msgstr ""
-
-#: classes/orbis-companies-plugin.php:62
-msgid "Add New Contact"
-msgstr ""
-
-#: classes/orbis-companies-plugin.php:65 includes/post.php:10
-msgid "Company"
-msgstr ""
-
-#: classes/orbis-companies-plugin.php:66
-msgid "Search company"
-msgstr ""
-
-#: classes/orbis-companies-plugin.php:67 includes/post.php:18
-msgid "No companies found."
-msgstr ""
-
-#: classes/orbis-companies-plugin.php:68
-msgid "Add Company"
-msgstr ""
-
-#: classes/orbis-companies-plugin.php:69 includes/post.php:14
-msgid "New Company"
-msgstr ""
-
-#: classes/orbis-companies-plugin.php:70 includes/post.php:12
-msgid "Add New Company"
-msgstr ""
-
-#: includes/companies.php:9
-msgid "Company Details"
-msgstr ""
-
-#: includes/companies.php:146
+#: classes/class-admin-company-post-type.php:31
 msgid "Title"
 msgstr ""
 
-#: includes/companies.php:148
+#: classes/class-admin-company-post-type.php:33
 msgid "Online"
 msgstr ""
 
-#: includes/companies.php:150
+#: classes/class-admin-company-post-type.php:35
 msgid "Author"
 msgstr ""
 
-#: includes/companies.php:151
+#: classes/class-admin-company-post-type.php:36
 msgid "Comments"
 msgstr ""
 
-#: includes/companies.php:152
+#: classes/class-admin-company-post-type.php:37
 msgid "Date"
 msgstr ""
 
-#: includes/post.php:13
+#: classes/class-admin-company-post-type.php:97
+msgid "Company Details"
+msgstr ""
+
+#: classes/class-content-types.php:18 classes/class-content-types.php:20
+#: classes/class-content-types.php:32 classes/class-plugin.php:60
+msgid "Companies"
+msgstr ""
+
+#: classes/class-content-types.php:21 classes/class-plugin.php:72
+msgid "Company"
+msgstr ""
+
+#: classes/class-content-types.php:23 classes/class-plugin.php:77
+msgid "Add New Company"
+msgstr ""
+
+#: classes/class-content-types.php:24
 msgid "Edit Company"
 msgstr ""
 
-#: includes/post.php:15
+#: classes/class-content-types.php:25 classes/class-plugin.php:76
+msgid "New Company"
+msgstr ""
+
+#: classes/class-content-types.php:26
 msgid "All Companies"
 msgstr ""
 
-#: includes/post.php:16
+#: classes/class-content-types.php:27
 msgid "View Company"
 msgstr ""
 
-#: includes/post.php:17
+#: classes/class-content-types.php:28
 msgid "Search Companies"
 msgstr ""
 
-#: includes/post.php:19
+#: classes/class-content-types.php:29 classes/class-plugin.php:74
+msgid "No companies found."
+msgstr ""
+
+#: classes/class-content-types.php:30
 msgid "No companies found in Trash."
 msgstr ""
 
-#: includes/post.php:20
+#: classes/class-content-types.php:31
 msgid "Parent Company:"
 msgstr ""
 
-#: includes/post.php:43
+#: classes/class-content-types.php:54
 msgid "Search Categories"
 msgstr ""
 
-#: includes/post.php:44
+#: classes/class-content-types.php:55
 msgid "All Categories"
 msgstr ""
 
-#: includes/post.php:45
+#: classes/class-content-types.php:56
 msgid "Parent Category"
 msgstr ""
 
-#: includes/post.php:46
+#: classes/class-content-types.php:57
 msgid "Parent Category:"
 msgstr ""
 
-#: includes/post.php:47
+#: classes/class-content-types.php:58
 msgid "Edit Category"
 msgstr ""
 
-#: includes/post.php:48
+#: classes/class-content-types.php:59
 msgid "Update Category"
 msgstr ""
 
-#: includes/post.php:49
+#: classes/class-content-types.php:60
 msgid "Add New Category"
 msgstr ""
 
-#: includes/post.php:50
+#: classes/class-content-types.php:61
 msgid "New Category Name"
 msgstr ""
 
-#: includes/post.php:51
+#: classes/class-content-types.php:62
 msgid "Categories"
+msgstr ""
+
+#: classes/class-plugin.php:61
+msgid "Contacts"
+msgstr ""
+
+#: classes/class-plugin.php:64
+msgid "Contact"
+msgstr ""
+
+#: classes/class-plugin.php:65
+msgid "Search contact"
+msgstr ""
+
+#: classes/class-plugin.php:66
+msgid "No contacts found."
+msgstr ""
+
+#: classes/class-plugin.php:67
+msgid "Add Contact"
+msgstr ""
+
+#: classes/class-plugin.php:68
+msgid "New Contact"
+msgstr ""
+
+#: classes/class-plugin.php:69
+msgid "Add New Contact"
+msgstr ""
+
+#: classes/class-plugin.php:73
+msgid "Search company"
+msgstr ""
+
+#: classes/class-plugin.php:75
+msgid "Add Company"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
@@ -233,27 +234,27 @@ msgstr ""
 msgid "https://www.pronamic.eu/"
 msgstr ""
 
-#: includes/post.php:11
+#: classes/class-content-types.php:22
 msgctxt "orbis_company"
 msgid "Add New"
 msgstr ""
 
-#: includes/post.php:30
+#: classes/class-content-types.php:41
 msgctxt "slug"
 msgid "companies"
 msgstr ""
 
-#: includes/post.php:56
+#: classes/class-content-types.php:67
 msgctxt "slug"
 msgid "company-category"
 msgstr ""
 
-#: includes/post.php:41
+#: classes/class-content-types.php:52
 msgctxt "taxonomy general name"
 msgid "Categories"
 msgstr ""
 
-#: includes/post.php:42
+#: classes/class-content-types.php:53
 msgctxt "taxonomy singular name"
 msgid "Category"
 msgstr ""

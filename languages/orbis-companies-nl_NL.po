@@ -5,21 +5,22 @@ msgstr ""
 "Project-Id-Version: Orbis Companies\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/orbis-companies\n"
 "POT-Creation-Date: 2016-11-29 11:18:34+00:00\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-11-29 12:25+0100\n"
-"X-Generator: Poedit 1.7.4\n"
+"PO-Revision-Date: 2016-12-16 14:09+0100\n"
 "Last-Translator: Remco Tolsma <info@remcotolsma.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
 "Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #: admin/meta-box-company-details.php:32
 msgid "Orbis ID"
 msgstr "Orbis ID"
 
-#: admin/meta-box-company-details.php:40 includes/companies.php:149
+#: admin/meta-box-company-details.php:40
+#: classes/class-admin-company-post-type.php:34
 msgid "Registration Number"
 msgstr "Registratienummer"
 
@@ -43,8 +44,8 @@ msgstr "Website"
 msgid "Addresses"
 msgstr "Adressen"
 
-#: admin/meta-box-company-details.php:85
-#: admin/meta-box-company-details.php:88 includes/companies.php:147
+#: admin/meta-box-company-details.php:85 admin/meta-box-company-details.php:88
+#: classes/class-admin-company-post-type.php:32
 msgid "Address"
 msgstr "Adres"
 
@@ -72,146 +73,146 @@ msgstr "Facebook URL:"
 msgid "LinkedIn URL:"
 msgstr "LinkedIn URL:"
 
-#: classes/orbis-companies-plugin.php:53 includes/post.php:7
-#: includes/post.php:9 includes/post.php:21
-msgid "Companies"
-msgstr "Bedrijven"
-
-#: classes/orbis-companies-plugin.php:54
-msgid "Contacts"
-msgstr "Contacten"
-
-#: classes/orbis-companies-plugin.php:57
-msgid "Contact"
-msgstr "Contact"
-
-#: classes/orbis-companies-plugin.php:58
-msgid "Search contact"
-msgstr "Contact zoeken"
-
-#: classes/orbis-companies-plugin.php:59
-msgid "No contacts found."
-msgstr "Geen contacten gevonden"
-
-#: classes/orbis-companies-plugin.php:60
-msgid "Add Contact"
-msgstr "Contact toevoegen"
-
-#: classes/orbis-companies-plugin.php:61
-msgid "New Contact"
-msgstr "Nieuw contact"
-
-#: classes/orbis-companies-plugin.php:62
-msgid "Add New Contact"
-msgstr "Nieuwe contact toevoegen"
-
-#: classes/orbis-companies-plugin.php:65 includes/post.php:10
-msgid "Company"
-msgstr "Bedrijf"
-
-#: classes/orbis-companies-plugin.php:66
-msgid "Search company"
-msgstr "Bedrijf zoeken"
-
-#: classes/orbis-companies-plugin.php:67 includes/post.php:18
-msgid "No companies found."
-msgstr "Geen bedrijven gevonden"
-
-#: classes/orbis-companies-plugin.php:68
-msgid "Add Company"
-msgstr "Bedrijf toevoegen"
-
-#: classes/orbis-companies-plugin.php:69 includes/post.php:14
-msgid "New Company"
-msgstr "Nieuw bedrijf"
-
-#: classes/orbis-companies-plugin.php:70 includes/post.php:12
-msgid "Add New Company"
-msgstr "Nieuw bedrijf toevoegen"
-
-#: includes/companies.php:9
-msgid "Company Details"
-msgstr "Bedrijf details"
-
-#: includes/companies.php:146
+#: classes/class-admin-company-post-type.php:31
 msgid "Title"
 msgstr "Titel"
 
-#: includes/companies.php:148
+#: classes/class-admin-company-post-type.php:33
 msgid "Online"
 msgstr "Online"
 
-#: includes/companies.php:150
+#: classes/class-admin-company-post-type.php:35
 msgid "Author"
 msgstr "Auteur"
 
-#: includes/companies.php:151
+#: classes/class-admin-company-post-type.php:36
 msgid "Comments"
 msgstr "Reacties"
 
-#: includes/companies.php:152
+#: classes/class-admin-company-post-type.php:37
 msgid "Date"
 msgstr "Datum"
 
-#: includes/post.php:13
+#: classes/class-admin-company-post-type.php:97
+msgid "Company Details"
+msgstr "Bedrijf details"
+
+#: classes/class-content-types.php:18 classes/class-content-types.php:20
+#: classes/class-content-types.php:32 classes/class-plugin.php:60
+msgid "Companies"
+msgstr "Bedrijven"
+
+#: classes/class-content-types.php:21 classes/class-plugin.php:72
+msgid "Company"
+msgstr "Bedrijf"
+
+#: classes/class-content-types.php:23 classes/class-plugin.php:77
+msgid "Add New Company"
+msgstr "Nieuw bedrijf toevoegen"
+
+#: classes/class-content-types.php:24
 msgid "Edit Company"
 msgstr "Bedrijf bewerken"
 
-#: includes/post.php:15
+#: classes/class-content-types.php:25 classes/class-plugin.php:76
+msgid "New Company"
+msgstr "Nieuw bedrijf"
+
+#: classes/class-content-types.php:26
 msgid "All Companies"
 msgstr "Alle bedrijven"
 
-#: includes/post.php:16
+#: classes/class-content-types.php:27
 msgid "View Company"
 msgstr "Bedrijf bekijken"
 
-#: includes/post.php:17
+#: classes/class-content-types.php:28
 msgid "Search Companies"
 msgstr "Zoek bedrijven"
 
-#: includes/post.php:19
+#: classes/class-content-types.php:29 classes/class-plugin.php:74
+msgid "No companies found."
+msgstr "Geen bedrijven gevonden"
+
+#: classes/class-content-types.php:30
 msgid "No companies found in Trash."
 msgstr "Geen bedrijven gevonden in prullenbak."
 
-#: includes/post.php:20
+#: classes/class-content-types.php:31
 msgid "Parent Company:"
 msgstr "Bovenliggend bedrijf:"
 
-#: includes/post.php:43
+#: classes/class-content-types.php:54
 msgid "Search Categories"
 msgstr "Zoek categorieën"
 
-#: includes/post.php:44
+#: classes/class-content-types.php:55
 msgid "All Categories"
 msgstr "Alle categorieën"
 
-#: includes/post.php:45
+#: classes/class-content-types.php:56
 msgid "Parent Category"
 msgstr "Bovenliggende categorie"
 
-#: includes/post.php:46
+#: classes/class-content-types.php:57
 msgid "Parent Category:"
 msgstr "Bovenliggende categorie:"
 
-#: includes/post.php:47
+#: classes/class-content-types.php:58
 msgid "Edit Category"
 msgstr "Categorie bewerken"
 
-#: includes/post.php:48
+#: classes/class-content-types.php:59
 msgid "Update Category"
 msgstr "Categorie bijwerken"
 
-#: includes/post.php:49
+#: classes/class-content-types.php:60
 msgid "Add New Category"
 msgstr "Nieuwe categorie"
 
-#: includes/post.php:50
+#: classes/class-content-types.php:61
 msgid "New Category Name"
 msgstr "Nieuwe categorie naam"
 
-#: includes/post.php:51
+#: classes/class-content-types.php:62
 msgid "Categories"
 msgstr "Categorieën"
+
+#: classes/class-plugin.php:61
+msgid "Contacts"
+msgstr "Contacten"
+
+#: classes/class-plugin.php:64
+msgid "Contact"
+msgstr "Contact"
+
+#: classes/class-plugin.php:65
+msgid "Search contact"
+msgstr "Contact zoeken"
+
+#: classes/class-plugin.php:66
+msgid "No contacts found."
+msgstr "Geen contacten gevonden"
+
+#: classes/class-plugin.php:67
+msgid "Add Contact"
+msgstr "Contact toevoegen"
+
+#: classes/class-plugin.php:68
+msgid "New Contact"
+msgstr "Nieuw contact"
+
+#: classes/class-plugin.php:69
+msgid "Add New Contact"
+msgstr "Nieuwe contact toevoegen"
+
+#: classes/class-plugin.php:73
+msgid "Search company"
+msgstr "Bedrijf zoeken"
+
+#: classes/class-plugin.php:75
+msgid "Add Company"
+msgstr "Bedrijf toevoegen"
 
 #. Plugin Name of the plugin/theme
 msgid "Orbis Companies"
@@ -223,8 +224,8 @@ msgstr "https://www.pronamic.eu/plugins/orbis-companies/"
 
 #. Description of the plugin/theme
 msgid ""
-"The Orbis Companies plugin extends your Orbis environment with the option "
-"to manage companies."
+"The Orbis Companies plugin extends your Orbis environment with the option to "
+"manage companies."
 msgstr ""
 "De Orbis bedrijven plugin breidt je Orbis omgeving uit met de mogelijkheid "
 "om bedrijven te beheren."
@@ -237,27 +238,27 @@ msgstr "Pronamic"
 msgid "https://www.pronamic.eu/"
 msgstr "https://www.pronamic.nl/"
 
-#: includes/post.php:11
+#: classes/class-content-types.php:22
 msgctxt "orbis_company"
 msgid "Add New"
 msgstr "Nieuw bedrijf"
 
-#: includes/post.php:30
+#: classes/class-content-types.php:41
 msgctxt "slug"
 msgid "companies"
 msgstr "bedrijven"
 
-#: includes/post.php:56
+#: classes/class-content-types.php:67
 msgctxt "slug"
 msgid "company-category"
 msgstr "bedrijf-categorie"
 
-#: includes/post.php:41
+#: classes/class-content-types.php:52
 msgctxt "taxonomy general name"
 msgid "Categories"
 msgstr "Categorieën"
 
-#: includes/post.php:42
+#: classes/class-content-types.php:53
 msgctxt "taxonomy singular name"
 msgid "Category"
 msgstr "Categorie"

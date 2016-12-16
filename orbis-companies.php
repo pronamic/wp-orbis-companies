@@ -10,7 +10,7 @@ Requires at least: 3.5
 Author: Pronamic
 Author URI: https://www.pronamic.eu/
 
-Text Domain: orbis_companies
+Text Domain: orbis-companies
 Domain Path: /languages/
 
 License: Copyright (c) Pronamic
@@ -19,22 +19,17 @@ GitHub URI: https://github.com/wp-orbis/wp-orbis-companies
 */
 
 /**
- * Includes
+ * Autoload
  */
-require_once 'includes/companies.php';
+require_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
 
 /**
  * Bootstrap
  */
 function orbis_companies_bootstrap() {
-	// Classes
-	require_once 'classes/orbis-company.php';
-	require_once 'classes/orbis-companies-plugin.php';
-
-	// Initialize
 	global $orbis_companies_plugin;
 
 	$orbis_companies_plugin = new Orbis_Companies_Plugin( __FILE__ );
 }
 
-add_action( 'orbis_bootstrap', 'orbis_companies_bootstrap' );
+add_action( 'plugins_loaded', 'orbis_companies_bootstrap' );
