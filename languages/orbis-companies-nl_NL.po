@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Orbis Companies\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/orbis-companies\n"
 "POT-Creation-Date: 2016-11-29 11:18:34+00:00\n"
-"PO-Revision-Date: 2016-12-16 14:09+0100\n"
+"PO-Revision-Date: 2017-09-07 13:29+0100\n"
 "Last-Translator: Remco Tolsma <info@remcotolsma.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
 "Language: nl_NL\n"
@@ -72,6 +72,22 @@ msgstr "Facebook URL:"
 #: admin/meta-box-company-details.php:114
 msgid "LinkedIn URL:"
 msgstr "LinkedIn URL:"
+
+#: admin/meta-box-company-details.php:122
+msgid "Payment Method"
+msgstr "Betaalmethode"
+
+#: admin/meta-box-company-details.php:133
+msgid "— Select Payment Method —"
+msgstr "— Selecteer betaalmethode —"
+
+#: admin/meta-box-company-details.php:144
+msgid "Invoice Shipping Method"
+msgstr "Factuur verzendmethode"
+
+#: admin/meta-box-company-details.php:155
+msgid "— Select Invoice Shipping Method —"
+msgstr "— Selecteer factuur verzendmethode —"
 
 #: classes/class-admin-company-post-type.php:31
 msgid "Title"
@@ -178,6 +194,78 @@ msgstr "Nieuwe categorie naam"
 msgid "Categories"
 msgstr "Categorieën"
 
+#: classes/class-content-types.php:80
+msgid "Search Payment Methods"
+msgstr "Betaalmethoden zoeken"
+
+#: classes/class-content-types.php:81
+msgid "All Payment Methods"
+msgstr "Alle betaalmethoden"
+
+#: classes/class-content-types.php:82
+msgid "Parent Payment Method"
+msgstr "Bovenliggende betaalmethode"
+
+#: classes/class-content-types.php:83
+msgid "Parent Payment Method:"
+msgstr "Bovenliggende betaalmethode:"
+
+#: classes/class-content-types.php:84
+msgid "Edit Payment Method"
+msgstr "Betaalmethode bewerken"
+
+#: classes/class-content-types.php:85
+msgid "Update Payment Method"
+msgstr "Betaalmethode bijwerken"
+
+#: classes/class-content-types.php:86
+msgid "Add New Payment Method"
+msgstr "Nieuwe betaalmethode toevoegen"
+
+#: classes/class-content-types.php:87
+msgid "New Payment Method Name"
+msgstr "Nieuwe betaalmethode naam"
+
+#: classes/class-content-types.php:88
+msgid "Payment Methods"
+msgstr "Betaalmethoden"
+
+#: classes/class-content-types.php:107
+msgid "Search Invoice Shipping Methods"
+msgstr "Factuur verzendmethoden zoeken"
+
+#: classes/class-content-types.php:108
+msgid "All Invoice Shipping Methods"
+msgstr "Alle factuur verzendmethoden"
+
+#: classes/class-content-types.php:109
+msgid "Parent Invoice Shipping Method"
+msgstr "Bovenliggende factuur verzendmethode"
+
+#: classes/class-content-types.php:110
+msgid "Parent Invoice Shipping Method:"
+msgstr "Bovenliggende factuur verzendmethode:"
+
+#: classes/class-content-types.php:111
+msgid "Edit Invoice Shipping Method"
+msgstr "Factuur verzendmethode bewerken"
+
+#: classes/class-content-types.php:112
+msgid "Update Invoice Shipping Method"
+msgstr "Factuur verzendmethode bijwerken"
+
+#: classes/class-content-types.php:113
+msgid "Add New Invoice Shipping Method"
+msgstr "Nieuwe factuur verzendmethode toevoegen"
+
+#: classes/class-content-types.php:114
+msgid "New Invoice Shipping Method Name"
+msgstr "Nieuwe factuur verzendmethode naam"
+
+#: classes/class-content-types.php:115
+msgid "Invoice Shipping Methods"
+msgstr "Factuur verzendmethoden"
+
 #: classes/class-plugin.php:61
 msgid "Contacts"
 msgstr "Contacten"
@@ -253,12 +341,42 @@ msgctxt "slug"
 msgid "company-category"
 msgstr "bedrijf-categorie"
 
+#: classes/class-content-types.php:93
+msgctxt "slug"
+msgid "payment-methods"
+msgstr "betaalmethoden"
+
+#: classes/class-content-types.php:120
+msgctxt "slug"
+msgid "invoice-shipping-methods"
+msgstr "factuur-verzendmethoden"
+
 #: classes/class-content-types.php:52
 msgctxt "taxonomy general name"
 msgid "Categories"
 msgstr "Categorieën"
 
+#: classes/class-content-types.php:78
+msgctxt "taxonomy general name"
+msgid "Payment Methods"
+msgstr "Betaalmethoden"
+
+#: classes/class-content-types.php:105
+msgctxt "taxonomy general name"
+msgid "Invoice Shipping Methods"
+msgstr "Factuur verzendmethoden"
+
 #: classes/class-content-types.php:53
 msgctxt "taxonomy singular name"
 msgid "Category"
 msgstr "Categorie"
+
+#: classes/class-content-types.php:79
+msgctxt "taxonomy singular name"
+msgid "Payment Method"
+msgstr "Betaalmethode"
+
+#: classes/class-content-types.php:106
+msgctxt "taxonomy singular name"
+msgid "Invoice Shipping Method"
+msgstr "Factuur verzendmethode"

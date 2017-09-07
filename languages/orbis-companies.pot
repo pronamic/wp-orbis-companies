@@ -1,4 +1,4 @@
-# Copyright (C) 2016 Pronamic
+# Copyright (C) 2017 Pronamic
 # This file is distributed under the Copyright (c) Pronamic.
 msgid ""
 msgstr ""
@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2016-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 0.5.4\n"
@@ -69,6 +69,22 @@ msgstr ""
 
 #: admin/meta-box-company-details.php:114
 msgid "LinkedIn URL:"
+msgstr ""
+
+#: admin/meta-box-company-details.php:122
+msgid "Payment Method"
+msgstr ""
+
+#: admin/meta-box-company-details.php:133
+msgid "— Select Payment Method —"
+msgstr ""
+
+#: admin/meta-box-company-details.php:144
+msgid "Invoice Shipping Method"
+msgstr ""
+
+#: admin/meta-box-company-details.php:155
+msgid "— Select Invoice Shipping Method —"
 msgstr ""
 
 #: classes/class-admin-company-post-type.php:31
@@ -176,6 +192,78 @@ msgstr ""
 msgid "Categories"
 msgstr ""
 
+#: classes/class-content-types.php:80
+msgid "Search Payment Methods"
+msgstr ""
+
+#: classes/class-content-types.php:81
+msgid "All Payment Methods"
+msgstr ""
+
+#: classes/class-content-types.php:82
+msgid "Parent Payment Method"
+msgstr ""
+
+#: classes/class-content-types.php:83
+msgid "Parent Payment Method:"
+msgstr ""
+
+#: classes/class-content-types.php:84
+msgid "Edit Payment Method"
+msgstr ""
+
+#: classes/class-content-types.php:85
+msgid "Update Payment Method"
+msgstr ""
+
+#: classes/class-content-types.php:86
+msgid "Add New Payment Method"
+msgstr ""
+
+#: classes/class-content-types.php:87
+msgid "New Payment Method Name"
+msgstr ""
+
+#: classes/class-content-types.php:88
+msgid "Payment Methods"
+msgstr ""
+
+#: classes/class-content-types.php:107
+msgid "Search Invoice Shipping Methods"
+msgstr ""
+
+#: classes/class-content-types.php:108
+msgid "All Invoice Shipping Methods"
+msgstr ""
+
+#: classes/class-content-types.php:109
+msgid "Parent Invoice Shipping Method"
+msgstr ""
+
+#: classes/class-content-types.php:110
+msgid "Parent Invoice Shipping Method:"
+msgstr ""
+
+#: classes/class-content-types.php:111
+msgid "Edit Invoice Shipping Method"
+msgstr ""
+
+#: classes/class-content-types.php:112
+msgid "Update Invoice Shipping Method"
+msgstr ""
+
+#: classes/class-content-types.php:113
+msgid "Add New Invoice Shipping Method"
+msgstr ""
+
+#: classes/class-content-types.php:114
+msgid "New Invoice Shipping Method Name"
+msgstr ""
+
+#: classes/class-content-types.php:115
+msgid "Invoice Shipping Methods"
+msgstr ""
+
 #: classes/class-plugin.php:61
 msgid "Contacts"
 msgstr ""
@@ -249,12 +337,42 @@ msgctxt "slug"
 msgid "company-category"
 msgstr ""
 
+#: classes/class-content-types.php:93
+msgctxt "slug"
+msgid "payment-methods"
+msgstr ""
+
+#: classes/class-content-types.php:120
+msgctxt "slug"
+msgid "invoice-shipping-methods"
+msgstr ""
+
 #: classes/class-content-types.php:52
 msgctxt "taxonomy general name"
 msgid "Categories"
 msgstr ""
 
+#: classes/class-content-types.php:78
+msgctxt "taxonomy general name"
+msgid "Payment Methods"
+msgstr ""
+
+#: classes/class-content-types.php:105
+msgctxt "taxonomy general name"
+msgid "Invoice Shipping Methods"
+msgstr ""
+
 #: classes/class-content-types.php:53
 msgctxt "taxonomy singular name"
 msgid "Category"
+msgstr ""
+
+#: classes/class-content-types.php:79
+msgctxt "taxonomy singular name"
+msgid "Payment Method"
+msgstr ""
+
+#: classes/class-content-types.php:106
+msgctxt "taxonomy singular name"
+msgid "Invoice Shipping Method"
 msgstr ""

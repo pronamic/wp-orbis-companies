@@ -97,7 +97,6 @@ module.exports = function( grunt ) {
 						'node_modules/.*',
 						'vendor/.*'
 					]
-
 				}
 			}
 		}

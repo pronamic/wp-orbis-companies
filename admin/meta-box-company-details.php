@@ -117,5 +117,49 @@ wp_nonce_field( 'orbis_save_company_details', 'orbis_company_details_meta_box_no
 				<input type="text" id="orbis_company_linkedin" name="_orbis_company_linkedin" value="<?php echo esc_attr( $company_linkedin ); ?>" class="regular-text" />
 			</td>
 		</tr>
+		<tr valign="top">
+			<th scope="row">
+				<label for="orbis_company_payment_method"><?php _e( 'Payment Method', 'orbis-companies' ); ?></label>
+			</th>
+			<td>
+				<?php
+
+				$terms = wp_get_post_terms( $post->ID, 'orbis_payment_method' );
+
+				$term = array_shift( $terms );
+
+				wp_dropdown_categories( array(
+					'name'             => 'tax_input[orbis_payment_method]',
+					'show_option_none' => __( '— Select Payment Method —', 'orbis-companies' ),
+					'hide_empty'       => false,
+					'selected'         => is_object( $term ) ? $term->term_id : false,
+					'taxonomy'         => 'orbis_payment_method',
+				) );
+
+				?>
+			</td>
+		</tr>
+		<tr valign="top">
+			<th scope="row">
+				<label for="orbis_company_invoice_shipping_method"><?php _e( 'Invoice Shipping Method', 'orbis-companies' ); ?></label>
+			</th>
+			<td>
+				<?php
+
+				$terms = wp_get_post_terms( $post->ID, 'orbis_invoice_shipping_method' );
+
+				$term = array_shift( $terms );
+
+				wp_dropdown_categories( array(
+					'name'             => 'tax_input[orbis_invoice_shipping_method]',
+					'show_option_none' => __( '— Select Invoice Shipping Method —', 'orbis-companies' ),
+					'hide_empty'       => false,
+					'selected'         => is_object( $term ) ? $term->term_id : false,
+					'taxonomy'         => 'orbis_invoice_shipping_method',
+				) );
+
+				?>
+			</td>
+		</tr>
 	</tbody>
 </table>
