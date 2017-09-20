@@ -94,11 +94,13 @@ class Orbis_Companies_Plugin extends Orbis_Plugin {
 			FROM
 				$wpdb->orbis_companies AS company
 			WHERE
-				company.name LIKE '%%%1\$s%%'
+				company.name LIKE %s
 			;"
 		;
 
-		$query = $wpdb->prepare( $query, $term ); // unprepared SQL
+		$like = '%' . $wpdb->esc_like( $term ) . '%';
+
+		$query = $wpdb->prepare( $query, $like ); // unprepared SQL
 
 		$data = $wpdb->get_results( $query ); // unprepared SQL
 
