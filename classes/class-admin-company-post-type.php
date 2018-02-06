@@ -9,7 +9,7 @@ class Orbis_Projects_AdminCompanyPostType {
 	/**
 	 * Construct.
 	 */
-	public function __construct( $plugin ) {		
+	public function __construct( $plugin ) {
 		$this->plugin = $plugin;
 
 		add_filter( 'manage_edit-' . self::POST_TYPE . '_columns' , array( $this, 'edit_columns' ) );

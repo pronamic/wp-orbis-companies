@@ -24,7 +24,7 @@ class Orbis_Companies_Plugin extends Orbis_Plugin {
 		// Admin
 		if ( is_admin() ) {
 			$this->admin = new Orbis_Companies_Admin( $this );
-		} 
+		}
 	}
 
 	/**
@@ -104,7 +104,7 @@ class Orbis_Companies_Plugin extends Orbis_Plugin {
 
 		$data = $wpdb->get_results( $query ); // unprepared SQL
 
-		echo json_encode( $data );
+		echo wp_json_encode( $data );
 
 		die();
 	}
