@@ -76,21 +76,16 @@ wp_nonce_field( 'orbis_save_company_details', 'orbis_company_details_meta_box_no
 			</td>
 		</tr>
 		<tr>
-			<th scope="col" colspan="2">
-				<h4 class="title"><?php esc_html_e( 'Addresses', 'orbis-companies' ); ?></h4>
-			</th>
-		</tr>
-		<tr>
 			<th scope="row">
 				<label for="orbis_company_address"><?php esc_html_e( 'Address', 'orbis-companies' ); ?></label>
 			</th>
 			<td>
-				<input id="orbis_company_address" name="_orbis_company_address" placeholder="<?php esc_attresc_html_e( 'Address', 'orbis-companies' ); ?>" value="<?php echo esc_attr( $address ); ?>" type="text" size="42" />
+				<input id="orbis_company_address" name="_orbis_company_address" placeholder="<?php echo esc_attr( __( 'Address', 'orbis-companies' ) ); ?>" value="<?php echo esc_attr( $address ); ?>" type="text" size="42" />
 				<br />
-				<input id="orbis_company_postcode" name="_orbis_company_postcode" placeholder="<?php esc_attresc_html_e( 'Postcode', 'orbis-companies' ); ?>" value="<?php echo esc_attr( $postcode ); ?>" type="text" size="10" />
-				<input id="orbis_company_city" name="_orbis_company_city" placeholder="<?php esc_attresc_html_e( 'City', 'orbis-companies' ); ?>" value="<?php echo esc_attr( $city ); ?>" type="text" size="25" />
+				<input id="orbis_company_postcode" name="_orbis_company_postcode" placeholder="<?php echo esc_attr( __( 'Postcode', 'orbis-companies' ) ); ?>" value="<?php echo esc_attr( $postcode ); ?>" type="text" size="10" />
+				<input id="orbis_company_city" name="_orbis_company_city" placeholder="<?php echo esc_attr( __( 'City', 'orbis-companies' ) ); ?>" value="<?php echo esc_attr( $city ); ?>" type="text" size="25" />
 				<br />
-				<input id="orbis_company_country" name="_orbis_company_country" placeholder="<?php esc_attresc_html_e( 'Country', 'orbis-companies' ); ?>" value="<?php echo esc_attr( $country ); ?>" type="text" size="42" />
+				<input id="orbis_company_country" name="_orbis_company_country" placeholder="<?php echo esc_attr( __( 'Country', 'orbis-companies' ) ); ?>" value="<?php echo esc_attr( $country ); ?>" type="text" size="42" />
 			</td>
 		</tr>
 		<tr valign="top">
@@ -126,7 +121,7 @@ wp_nonce_field( 'orbis_save_company_details', 'orbis_company_details_meta_box_no
 
 				$terms = get_the_terms( $post->ID, 'orbis_payment_method' );
 
-				$term = array_shift( $terms );
+				$term = ( !$terms ) ? $terms : array_shift( $terms );
 
 				wp_dropdown_categories( array(
 					'name'             => 'tax_input[orbis_payment_method]',
@@ -148,7 +143,7 @@ wp_nonce_field( 'orbis_save_company_details', 'orbis_company_details_meta_box_no
 
 				$terms = get_the_terms( $post->ID, 'orbis_invoice_shipping_method' );
 
-				$term = array_shift( $terms );
+				$term = ( !$terms ) ? $terms : array_shift( $terms );
 
 				wp_dropdown_categories( array(
 					'name'             => 'tax_input[orbis_invoice_shipping_method]',
