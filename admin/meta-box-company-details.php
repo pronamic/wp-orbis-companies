@@ -18,9 +18,9 @@ $postcode   = get_post_meta( $post->ID, '_orbis_company_postcode', true );
 $city       = get_post_meta( $post->ID, '_orbis_company_city', true );
 $country    = get_post_meta( $post->ID, '_orbis_company_country', true );
 
-$company_twitter  = get_post_meta( $post->ID, '_orbis_company_twitter', true );
-$company_facebook = get_post_meta( $post->ID, '_orbis_company_facebook', true );
-$company_linkedin = get_post_meta( $post->ID, '_orbis_company_linkedin', true );
+$company_twitter  = get_post_meta( $post->ID, '_orbis_twitter', true );
+$company_facebook = get_post_meta( $post->ID, '_orbis_facebook', true );
+$company_linkedin = get_post_meta( $post->ID, '_orbis_linkedin', true );
 
 wp_nonce_field( 'orbis_save_company_details', 'orbis_company_details_meta_box_nonce' );
 
@@ -93,7 +93,7 @@ wp_nonce_field( 'orbis_save_company_details', 'orbis_company_details_meta_box_no
 				<label for="orbis_company_twitter"><?php esc_html_e( 'Twitter Username:', 'orbis-companies' ); ?></label>
 			</th>
 			<td>
-				<input type="text" id="orbis_company_twitter" name="_orbis_company_twitter" value="<?php echo esc_attr( $company_twitter ); ?>" class="regular-text" />
+				<input type="text" id="orbis_company_twitter" name="_orbis_twitter" value="<?php echo esc_attr( $company_twitter ); ?>" class="regular-text" />
 			</td>
 		</tr>
 		<tr valign="top">
@@ -101,7 +101,7 @@ wp_nonce_field( 'orbis_save_company_details', 'orbis_company_details_meta_box_no
 				<label for="orbis_company_facebook"><?php esc_html_e( 'Facebook URL:', 'orbis-companies' ); ?></label>
 			</th>
 			<td>
-				<input type="text" id="orbis_company_facebook" name="_orbis_company_facebook" value="<?php echo esc_attr( $company_facebook ); ?>" class="regular-text" />
+				<input type="text" id="orbis_company_facebook" name="_orbis_facebook" value="<?php echo esc_attr( $company_facebook ); ?>" class="regular-text" />
 			</td>
 		</tr>
 		<tr valign="top">
@@ -109,7 +109,7 @@ wp_nonce_field( 'orbis_save_company_details', 'orbis_company_details_meta_box_no
 				<label for="orbis_company_linkedin"><?php esc_html_e( 'LinkedIn URL:', 'orbis-companies' ); ?></label>
 			</th>
 			<td>
-				<input type="text" id="orbis_company_linkedin" name="_orbis_company_linkedin" value="<?php echo esc_attr( $company_linkedin ); ?>" class="regular-text" />
+				<input type="text" id="orbis_company_linkedin" name="_orbis_linkedin" value="<?php echo esc_attr( $company_linkedin ); ?>" class="regular-text" />
 			</td>
 		</tr>
 		<tr valign="top">
