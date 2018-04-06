@@ -58,7 +58,7 @@ class Orbis_Projects_AdminCompanyPostType {
 					$break = '<br />';
 				}
 
-				$email = get_post_meta( $post_id, '_orbis_company_email', true );
+				$email = get_post_meta( $post_id, '_orbis_email', true );
 
 				if ( ! empty( $email ) ) {
 					printf( $break );
@@ -68,9 +68,9 @@ class Orbis_Projects_AdminCompanyPostType {
 
 				break;
 			case 'orbis_company_address':
-				$address  = get_post_meta( $post_id, '_orbis_company_address', true );
-				$postcode = get_post_meta( $post_id, '_orbis_company_postcode', true );
-				$city     = get_post_meta( $post_id, '_orbis_company_city', true );
+				$address  = get_post_meta( $post_id, '_orbis_address', true );
+				$postcode = get_post_meta( $post_id, '_orbis_postcode', true );
+				$city     = get_post_meta( $post_id, '_orbis_city', true );
 
 				printf( '%s<br />%s %s', $address, $postcode, $city );
 
@@ -138,16 +138,16 @@ class Orbis_Projects_AdminCompanyPostType {
 		$definition = array(
 			'_orbis_company_kvk_number' => FILTER_SANITIZE_STRING,
 			'_orbis_company_vat_number' => FILTER_SANITIZE_STRING,
-			'_orbis_company_email'      => FILTER_VALIDATE_EMAIL,
+			'_orbis_email'              => FILTER_VALIDATE_EMAIL,
 			'_orbis_invoice_email'      => FILTER_VALIDATE_EMAIL,
 			'_orbis_company_website'    => FILTER_VALIDATE_URL,
-			'_orbis_company_address'    => FILTER_SANITIZE_STRING,
-			'_orbis_company_postcode'   => FILTER_SANITIZE_STRING,
-			'_orbis_company_city'       => FILTER_SANITIZE_STRING,
-			'_orbis_company_country'    => FILTER_SANITIZE_STRING,
-			'_orbis_company_twitter'    => FILTER_SANITIZE_STRING,
-			'_orbis_company_facebook'   => FILTER_SANITIZE_STRING,
-			'_orbis_company_linkedin'   => FILTER_SANITIZE_STRING,
+			'_orbis_address'            => FILTER_SANITIZE_STRING,
+			'_orbis_postcode'           => FILTER_SANITIZE_STRING,
+			'_orbis_city'               => FILTER_SANITIZE_STRING,
+			'_orbis_country'            => FILTER_SANITIZE_STRING,
+			'_orbis_twitter'            => FILTER_SANITIZE_STRING,
+			'_orbis_facebook'           => FILTER_SANITIZE_STRING,
+			'_orbis_linkedin'           => FILTER_SANITIZE_STRING,
 		);
 
 		$data = filter_input_array( INPUT_POST, $definition );

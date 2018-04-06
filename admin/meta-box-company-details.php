@@ -56,7 +56,7 @@ wp_nonce_field( 'orbis_save_company_details', 'orbis_company_details_meta_box_no
 				<label for="orbis_company_email"><?php esc_html_e( 'E-Mail', 'orbis-companies' ); ?></label>
 			</th>
 			<td>
-				<input id="orbis_company_email" name="_orbis_company_email" value="<?php echo esc_attr( $orbis_company->get_email() ); ?>" type="email" size="42" />
+				<input id="orbis_company_email" name="_orbis_email" value="<?php echo esc_attr( $orbis_company->get_email() ); ?>" type="email" size="42" />
 			</td>
 		</tr>
 		<tr>
@@ -80,12 +80,12 @@ wp_nonce_field( 'orbis_save_company_details', 'orbis_company_details_meta_box_no
 				<label for="orbis_company_address"><?php esc_html_e( 'Address', 'orbis-companies' ); ?></label>
 			</th>
 			<td>
-				<input id="orbis_company_address" name="_orbis_company_address" placeholder="<?php echo esc_attr( __( 'Address', 'orbis-companies' ) ); ?>" value="<?php echo esc_attr( $address ); ?>" type="text" size="42" />
+				<input id="orbis_company_address" name="_orbis_address" placeholder="<?php echo esc_attr( __( 'Address', 'orbis-companies' ) ); ?>" value="<?php echo esc_attr( $address ); ?>" type="text" size="42" />
 				<br />
-				<input id="orbis_company_postcode" name="_orbis_company_postcode" placeholder="<?php echo esc_attr( __( 'Postcode', 'orbis-companies' ) ); ?>" value="<?php echo esc_attr( $postcode ); ?>" type="text" size="10" />
-				<input id="orbis_company_city" name="_orbis_company_city" placeholder="<?php echo esc_attr( __( 'City', 'orbis-companies' ) ); ?>" value="<?php echo esc_attr( $city ); ?>" type="text" size="25" />
+				<input id="orbis_company_postcode" name="_orbis_postcode" placeholder="<?php echo esc_attr( __( 'Postcode', 'orbis-companies' ) ); ?>" value="<?php echo esc_attr( $postcode ); ?>" type="text" size="10" />
+				<input id="orbis_company_city" name="_orbis_city" placeholder="<?php echo esc_attr( __( 'City', 'orbis-companies' ) ); ?>" value="<?php echo esc_attr( $city ); ?>" type="text" size="25" />
 				<br />
-				<input id="orbis_company_country" name="_orbis_company_country" placeholder="<?php echo esc_attr( __( 'Country', 'orbis-companies' ) ); ?>" value="<?php echo esc_attr( $country ); ?>" type="text" size="42" />
+				<input id="orbis_company_country" name="_orbis_country" placeholder="<?php echo esc_attr( __( 'Country', 'orbis-companies' ) ); ?>" value="<?php echo esc_attr( $country ); ?>" type="text" size="42" />
 			</td>
 		</tr>
 		<tr valign="top">
