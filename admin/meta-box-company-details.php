@@ -13,10 +13,12 @@ $email         = get_post_meta( $post->ID, '_orbis_company_email', true );
 $invoice_email = get_post_meta( $post->ID, '_orbis_invoice_email', true );
 $website       = get_post_meta( $post->ID, '_orbis_company_website', true );
 
-$address    = get_post_meta( $post->ID, '_orbis_company_address', true );
-$postcode   = get_post_meta( $post->ID, '_orbis_company_postcode', true );
-$city       = get_post_meta( $post->ID, '_orbis_company_city', true );
-$country    = get_post_meta( $post->ID, '_orbis_company_country', true );
+$address  = get_post_meta( $post->ID, '_orbis_company_address', true );
+$postcode = get_post_meta( $post->ID, '_orbis_company_postcode', true );
+$city     = get_post_meta( $post->ID, '_orbis_company_city', true );
+$country  = get_post_meta( $post->ID, '_orbis_company_country', true );
+
+$iban_number = get_post_meta( $post->ID, '_orbis_iban_number', true );
 
 $company_twitter  = get_post_meta( $post->ID, '_orbis_twitter', true );
 $company_facebook = get_post_meta( $post->ID, '_orbis_facebook', true );
@@ -86,6 +88,14 @@ wp_nonce_field( 'orbis_save_company_details', 'orbis_company_details_meta_box_no
 				<input id="orbis_company_city" name="_orbis_city" placeholder="<?php echo esc_attr( __( 'City', 'orbis-companies' ) ); ?>" value="<?php echo esc_attr( $city ); ?>" type="text" size="25" />
 				<br />
 				<input id="orbis_company_country" name="_orbis_country" placeholder="<?php echo esc_attr( __( 'Country', 'orbis-companies' ) ); ?>" value="<?php echo esc_attr( $country ); ?>" type="text" size="42" />
+			</td>
+		</tr>
+		<tr valign="top">
+			<th scope="row">
+				<label for="orbis_iban_number"><?php _e( 'IBAN Number', 'orbis' ); ?></label>
+			</th>
+			<td>
+				<input type="text" id="orbis_iban_number" name="_orbis_iban_number" value="<?php echo esc_attr( $iban_number ); ?>" class="regular-text" />
 			</td>
 		</tr>
 		<tr valign="top">

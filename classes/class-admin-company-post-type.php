@@ -145,6 +145,7 @@ class Orbis_Projects_AdminCompanyPostType {
 			'_orbis_postcode'           => FILTER_SANITIZE_STRING,
 			'_orbis_city'               => FILTER_SANITIZE_STRING,
 			'_orbis_country'            => FILTER_SANITIZE_STRING,
+			'_orbis_iban_number'        => FILTER_SANITIZE_STRING,
 			'_orbis_twitter'            => FILTER_SANITIZE_STRING,
 			'_orbis_facebook'           => FILTER_SANITIZE_STRING,
 			'_orbis_linkedin'           => FILTER_SANITIZE_STRING,
