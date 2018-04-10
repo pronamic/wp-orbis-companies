@@ -6,19 +6,19 @@ $orbis_company = new Orbis_Company( $post );
 
 $orbis_id   = get_post_meta( $post->ID, '_orbis_company_id', true );
 
-$kvk_number = get_post_meta( $post->ID, '_orbis_company_kvk_number', true );
-$vat_number = get_post_meta( $post->ID, '_orbis_company_vat_number', true );
+$kvk_number = get_post_meta( $post->ID, '_orbis_kvk_number', true );
+$vat_number = get_post_meta( $post->ID, '_orbis_vat_number', true );
 
-$email         = get_post_meta( $post->ID, '_orbis_company_email', true );
+$email         = get_post_meta( $post->ID, '_orbis_email', true );
 $invoice_email = get_post_meta( $post->ID, '_orbis_invoice_email', true );
-$website       = get_post_meta( $post->ID, '_orbis_company_website', true );
+$website       = get_post_meta( $post->ID, '_orbis_website', true );
 
 $address  = get_post_meta( $post->ID, '_orbis_company_address', true );
 $postcode = get_post_meta( $post->ID, '_orbis_company_postcode', true );
 $city     = get_post_meta( $post->ID, '_orbis_company_city', true );
 $country  = get_post_meta( $post->ID, '_orbis_company_country', true );
 
-$iban_number = get_post_meta( $post->ID, '_orbis_iban_number', true );
+$iban = get_post_meta( $post->ID, '_orbis_iban', true );
 
 $company_twitter  = get_post_meta( $post->ID, '_orbis_twitter', true );
 $company_facebook = get_post_meta( $post->ID, '_orbis_facebook', true );
@@ -42,7 +42,7 @@ wp_nonce_field( 'orbis_save_company_details', 'orbis_company_details_meta_box_no
 				<label for="orbis_company_kvk_number"><?php esc_html_e( 'Registration Number', 'orbis-companies' ); ?></label>
 			</th>
 			<td>
-				<input id="orbis_company_kvk_number" name="_orbis_company_kvk_number" value="<?php echo esc_attr( $kvk_number ); ?>" type="text" size="20" />
+				<input id="orbis_company_kvk_number" name="_orbis_kvk_number" value="<?php echo esc_attr( $kvk_number ); ?>" type="text" size="20" />
 			</td>
 		</tr>
 		<tr>
@@ -50,7 +50,7 @@ wp_nonce_field( 'orbis_save_company_details', 'orbis_company_details_meta_box_no
 				<label for="orbis_company_vat_number"><?php esc_html_e( 'VAT Number', 'orbis-companies' ); ?></label>
 			</th>
 			<td>
-				<input id="orbis_company_vat_number" name="_orbis_company_vat_number" value="<?php echo esc_attr( $vat_number ); ?>" type="text" size="20" />
+				<input id="orbis_company_vat_number" name="_orbis_vat_number" value="<?php echo esc_attr( $vat_number ); ?>" type="text" size="20" />
 			</td>
 		</tr>
 		<tr>
@@ -74,7 +74,7 @@ wp_nonce_field( 'orbis_save_company_details', 'orbis_company_details_meta_box_no
 				<label for="orbis_company_website"><?php esc_html_e( 'Website', 'orbis-companies' ); ?></label>
 			</th>
 			<td>
-				<input id="orbis_company_website" name="_orbis_company_website" value="<?php echo esc_attr( $website ); ?>" type="url" size="42" />
+				<input id="orbis_company_website" name="_orbis_website" value="<?php echo esc_attr( $website ); ?>" type="url" size="42" />
 			</td>
 		</tr>
 		<tr>
@@ -92,10 +92,10 @@ wp_nonce_field( 'orbis_save_company_details', 'orbis_company_details_meta_box_no
 		</tr>
 		<tr valign="top">
 			<th scope="row">
-				<label for="orbis_iban_number"><?php _e( 'IBAN Number', 'orbis' ); ?></label>
+				<label for="orbis_iban"><?php _e( 'IBAN', 'orbis' ); ?></label>
 			</th>
 			<td>
-				<input type="text" id="orbis_iban_number" name="_orbis_iban_number" value="<?php echo esc_attr( $iban_number ); ?>" class="regular-text" />
+				<input type="text" id="orbis_iban" name="_orbis_iban" value="<?php echo esc_attr( $iban ); ?>" class="regular-text" />
 			</td>
 		</tr>
 		<tr valign="top">

@@ -50,7 +50,7 @@ class Orbis_Projects_AdminCompanyPostType {
 			case 'orbis_company_online':
 				$break = '';
 
-				$website = get_post_meta( $post_id, '_orbis_company_website', true );
+				$website = get_post_meta( $post_id, '_orbis_website', true );
 
 				if ( ! empty( $website ) ) {
 					printf( '<a href="%s" target="_blank">%s</a>', $website, $website );
@@ -76,7 +76,7 @@ class Orbis_Projects_AdminCompanyPostType {
 
 				break;
 			case 'orbis_company_kvk_number':
-				$kvk_number = get_post_meta( $post_id, '_orbis_company_kvk_number', true );
+				$kvk_number = get_post_meta( $post_id, '_orbis_kvk_number', true );
 
 				if ( ! empty( $kvk_number ) ) {
 					$url = sprintf( 'https://openkvk.nl/kvk/%s/', $kvk_number );
@@ -136,16 +136,16 @@ class Orbis_Projects_AdminCompanyPostType {
 
 		// OK
 		$definition = array(
-			'_orbis_company_kvk_number' => FILTER_SANITIZE_STRING,
-			'_orbis_company_vat_number' => FILTER_SANITIZE_STRING,
+			'_orbis_kvk_number'         => FILTER_SANITIZE_STRING,
+			'_orbis_vat_number'         => FILTER_SANITIZE_STRING,
 			'_orbis_email'              => FILTER_VALIDATE_EMAIL,
 			'_orbis_invoice_email'      => FILTER_VALIDATE_EMAIL,
-			'_orbis_company_website'    => FILTER_VALIDATE_URL,
+			'_orbis_website'            => FILTER_VALIDATE_URL,
 			'_orbis_address'            => FILTER_SANITIZE_STRING,
 			'_orbis_postcode'           => FILTER_SANITIZE_STRING,
 			'_orbis_city'               => FILTER_SANITIZE_STRING,
 			'_orbis_country'            => FILTER_SANITIZE_STRING,
-			'_orbis_iban_number'        => FILTER_SANITIZE_STRING,
+			'_orbis_iban'               => FILTER_SANITIZE_STRING,
 			'_orbis_twitter'            => FILTER_SANITIZE_STRING,
 			'_orbis_facebook'           => FILTER_SANITIZE_STRING,
 			'_orbis_linkedin'           => FILTER_SANITIZE_STRING,
