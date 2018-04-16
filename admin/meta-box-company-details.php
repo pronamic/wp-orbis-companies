@@ -92,7 +92,7 @@ wp_nonce_field( 'orbis_save_company_details', 'orbis_company_details_meta_box_no
 		</tr>
 		<tr valign="top">
 			<th scope="row">
-				<label for="orbis_iban"><?php _e( 'IBAN', 'orbis' ); ?></label>
+				<label for="orbis_iban"><?php _e( 'IBAN', 'orbis-companies' ); ?></label>
 			</th>
 			<td>
 				<input type="text" id="orbis_iban" name="_orbis_iban" value="<?php echo esc_attr( $iban ); ?>" class="regular-text" />
