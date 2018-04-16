@@ -122,5 +122,33 @@ class Orbis_Companies_ContentTypes {
 				'meta_box_cb'  => false,
 			)
 		);
+
+		register_taxonomy(
+			'orbis_company_status',
+			array( 'orbis_company' ),
+			array(
+				'hierarchical' => true,
+				'labels'       => array(
+					'name'              => _x( 'Statuses', 'taxonomy general name', 'orbis-companies' ),
+					'singular_name'     => _x( 'Status', 'taxonomy singular name', 'orbis-companies' ),
+					'search_items'      => __( 'Search Statuses', 'orbis-companies' ),
+					'all_items'         => __( 'All Statuses', 'orbis-companies' ),
+					'parent_item'       => __( 'Parent Status', 'orbis-companies' ),
+					'parent_item_colon' => __( 'Parent Status:', 'orbis-companies' ),
+					'edit_item'         => __( 'Edit Status', 'orbis-companies' ),
+					'update_item'       => __( 'Update Status', 'orbis-companies' ),
+					'add_new_item'      => __( 'Add New Status', 'orbis-companies' ),
+					'new_item_name'     => __( 'New Status Name', 'orbis-companies' ),
+					'menu_name'         => __( 'Statuses', 'orbis-companies' ),
+				),
+				'show_ui'      => true,
+				'public'       => true,
+				'show_in_rest' => true,
+				'query_var'    => true,
+				'rewrite'      => array(
+					'slug' => _x( 'company-status', 'slug', 'orbis-companies' ),
+				),
+			)
+		);
 	}
 }
