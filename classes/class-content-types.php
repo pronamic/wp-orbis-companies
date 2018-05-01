@@ -37,6 +37,8 @@ class Orbis_Companies_ContentTypes {
 				'capability_type' => array( 'orbis_company', 'orbis_companies' ),
 				'supports'        => array( 'title', 'editor', 'author', 'comments', 'thumbnail', 'custom-fields', 'revisions' ),
 				'has_archive'     => true,
+				'show_in_rest'    => true,
+				'rest_base'       => 'orbis/companies',
 				'rewrite'         => array(
 					'slug' => _x( 'companies', 'slug', 'orbis-companies' ),
 				),
