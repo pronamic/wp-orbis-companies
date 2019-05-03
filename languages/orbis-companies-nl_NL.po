@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Orbis Companies\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/orbis-companies\n"
 "POT-Creation-Date: 2016-11-29 11:18:34+00:00\n"
-"PO-Revision-Date: 2018-12-13 09:05+0100\n"
+"PO-Revision-Date: 2019-05-03 14:39+0100\n"
 "Last-Translator: Remco Tolsma <info@remcotolsma.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
 "Language: nl_NL\n"
@@ -127,11 +127,11 @@ msgstr "Bedrijf details"
 msgid "Companies"
 msgstr "Bedrijven"
 
-#: classes/class-content-types.php:21 classes/class-plugin.php:72
+#: classes/class-content-types.php:21 classes/class-plugin.php:79
 msgid "Company"
 msgstr "Bedrijf"
 
-#: classes/class-content-types.php:23 classes/class-plugin.php:77
+#: classes/class-content-types.php:23 classes/class-plugin.php:84
 msgid "Add New Company"
 msgstr "Nieuw bedrijf toevoegen"
 
@@ -139,7 +139,7 @@ msgstr "Nieuw bedrijf toevoegen"
 msgid "Edit Company"
 msgstr "Bedrijf bewerken"
 
-#: classes/class-content-types.php:25 classes/class-plugin.php:76
+#: classes/class-content-types.php:25 classes/class-plugin.php:83
 msgid "New Company"
 msgstr "Nieuw bedrijf"
 
@@ -155,7 +155,7 @@ msgstr "Bedrijf bekijken"
 msgid "Search Companies"
 msgstr "Zoek bedrijven"
 
-#: classes/class-content-types.php:29 classes/class-plugin.php:74
+#: classes/class-content-types.php:29 classes/class-plugin.php:81
 msgid "No companies found."
 msgstr "Geen bedrijven gevonden"
 
@@ -279,37 +279,61 @@ msgstr "Factuur verzendmethoden"
 msgid "Contacts"
 msgstr "Contacten"
 
-#: classes/class-plugin.php:64
+#: classes/class-plugin.php:65
+msgid "Note"
+msgstr "Notitie"
+
+#: classes/class-plugin.php:70
 msgid "Contact"
 msgstr "Contact"
 
-#: classes/class-plugin.php:65
+#: classes/class-plugin.php:71
 msgid "Search contact"
 msgstr "Contact zoeken"
 
-#: classes/class-plugin.php:66
+#: classes/class-plugin.php:72
 msgid "No contacts found."
 msgstr "Geen contacten gevonden"
 
-#: classes/class-plugin.php:67
+#: classes/class-plugin.php:73
 msgid "Add Contact"
 msgstr "Contact toevoegen"
 
-#: classes/class-plugin.php:68
+#: classes/class-plugin.php:74
 msgid "New Contact"
 msgstr "Nieuw contact"
 
-#: classes/class-plugin.php:69
+#: classes/class-plugin.php:75
 msgid "Add New Contact"
 msgstr "Nieuwe contact toevoegen"
 
-#: classes/class-plugin.php:73
+#: classes/class-plugin.php:76
+msgid ""
+"Please note: these are contacts who do not necessarily work at this company. "
+"Handle the removal of connected contacts with great care. In many cases, "
+"deleting connected contacts is not desirable."
+msgstr ""
+"Let op: dit zijn contacten die niet per se bij dit bedrijf werken. Ga "
+"zorgvuldig om met het verwijderen van verbonden contacten. In veel gevallen "
+"is het verwijderen van verbonden contacten niet wenselijk."
+
+#: classes/class-plugin.php:80
 msgid "Search company"
 msgstr "Bedrijf zoeken"
 
-#: classes/class-plugin.php:75
+#: classes/class-plugin.php:82
 msgid "Add Company"
 msgstr "Bedrijf toevoegen"
+
+#: classes/class-plugin.php:85
+msgid ""
+"Please note: this contact does not necessarily work at these companies. "
+"Handle the removal of connected companies with great care. In many cases, "
+"deleting connected companies is not desirable."
+msgstr ""
+"Let op: deze contact werkt niet per se bij deze bedrijven. Ga zorgvuldig om "
+"met het verwijderen van verbonden bedrijven. In veel gevallen is het "
+"verwijderen van verbonden bedrijven niet wenselijk."
 
 #. Plugin Name of the plugin/theme
 msgid "Orbis Companies"

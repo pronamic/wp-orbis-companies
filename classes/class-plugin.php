@@ -60,6 +60,12 @@ class Orbis_Companies_Plugin extends Orbis_Plugin {
 				'from' => __( 'Companies', 'orbis-companies' ),
 				'to'   => __( 'Contacts', 'orbis-companies' ),
 			),
+			'fields' => array(
+				'note' => array(
+					'title' => __( 'Note', 'orbis-companies' ),
+					'type'  => 'text',
+				),
+			),
 			'from_labels' => array(
 				'singular_name' => __( 'Contact', 'orbis-companies' ),
 				'search_items'  => __( 'Search contact', 'orbis-companies' ),
@@ -67,6 +73,7 @@ class Orbis_Companies_Plugin extends Orbis_Plugin {
 				'create'        => __( 'Add Contact', 'orbis-companies' ),
 				'new_item'      => __( 'New Contact', 'orbis-companies' ),
 				'add_new_item'  => __( 'Add New Contact', 'orbis-companies' ),
+				'help'          => __( 'Please note: these are contacts who do not necessarily work at this company. Handle the removal of connected contacts with great care. In many cases, deleting connected contacts is not desirable.', 'orbis-companies' ),
 			),
 			'to_labels'   => array(
 				'singular_name' => __( 'Company', 'orbis-companies' ),
@@ -75,6 +82,7 @@ class Orbis_Companies_Plugin extends Orbis_Plugin {
 				'create'        => __( 'Add Company', 'orbis-companies' ),
 				'new_item'      => __( 'New Company', 'orbis-companies' ),
 				'add_new_item'  => __( 'Add New Company', 'orbis-companies' ),
+				'help'          => __( 'Please note: this contact does not necessarily work at these companies. Handle the removal of connected companies with great care. In many cases, deleting connected companies is not desirable.', 'orbis-companies' ),
 			),
 		) );
 	}

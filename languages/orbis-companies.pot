@@ -1,4 +1,4 @@
-# Copyright (C) 2018 Pronamic
+# Copyright (C) 2019 Pronamic
 # This file is distributed under the Copyright (c) Pronamic.
 msgid ""
 msgstr ""
@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 0.5.4\n"
@@ -125,11 +125,11 @@ msgstr ""
 msgid "Companies"
 msgstr ""
 
-#: classes/class-content-types.php:21 classes/class-plugin.php:72
+#: classes/class-content-types.php:21 classes/class-plugin.php:79
 msgid "Company"
 msgstr ""
 
-#: classes/class-content-types.php:23 classes/class-plugin.php:77
+#: classes/class-content-types.php:23 classes/class-plugin.php:84
 msgid "Add New Company"
 msgstr ""
 
@@ -137,7 +137,7 @@ msgstr ""
 msgid "Edit Company"
 msgstr ""
 
-#: classes/class-content-types.php:25 classes/class-plugin.php:76
+#: classes/class-content-types.php:25 classes/class-plugin.php:83
 msgid "New Company"
 msgstr ""
 
@@ -153,7 +153,7 @@ msgstr ""
 msgid "Search Companies"
 msgstr ""
 
-#: classes/class-content-types.php:29 classes/class-plugin.php:74
+#: classes/class-content-types.php:29 classes/class-plugin.php:81
 msgid "No companies found."
 msgstr ""
 
@@ -277,36 +277,54 @@ msgstr ""
 msgid "Contacts"
 msgstr ""
 
-#: classes/class-plugin.php:64
+#: classes/class-plugin.php:65
+msgid "Note"
+msgstr ""
+
+#: classes/class-plugin.php:70
 msgid "Contact"
 msgstr ""
 
-#: classes/class-plugin.php:65
+#: classes/class-plugin.php:71
 msgid "Search contact"
 msgstr ""
 
-#: classes/class-plugin.php:66
+#: classes/class-plugin.php:72
 msgid "No contacts found."
 msgstr ""
 
-#: classes/class-plugin.php:67
+#: classes/class-plugin.php:73
 msgid "Add Contact"
 msgstr ""
 
-#: classes/class-plugin.php:68
+#: classes/class-plugin.php:74
 msgid "New Contact"
 msgstr ""
 
-#: classes/class-plugin.php:69
+#: classes/class-plugin.php:75
 msgid "Add New Contact"
 msgstr ""
 
-#: classes/class-plugin.php:73
+#: classes/class-plugin.php:76
+msgid ""
+"Please note: these are contacts who do not necessarily work at this "
+"company. Handle the removal of connected contacts with great care. In many "
+"cases, deleting connected contacts is not desirable."
+msgstr ""
+
+#: classes/class-plugin.php:80
 msgid "Search company"
 msgstr ""
 
-#: classes/class-plugin.php:75
+#: classes/class-plugin.php:82
 msgid "Add Company"
+msgstr ""
+
+#: classes/class-plugin.php:85
+msgid ""
+"Please note: this contact does not necessarily work at these companies. "
+"Handle the removal of connected companies with great care. In many cases, "
+"deleting connected companies is not desirable."
 msgstr ""
 
 #. Plugin Name of the plugin/theme
