@@ -77,6 +77,37 @@ class Orbis_Companies_Plugin extends Orbis_Plugin {
 				'add_new_item'  => __( 'Add New Company', 'orbis-companies' ),
 			),
 		) );
+
+		/**
+		 * Posts 2 Users.
+		 *
+		 * @link https://github.com/scribu/wp-posts-to-posts/wiki/Posts-2-Users
+		 */
+		p2p_register_connection_type( array(
+			'name' => 'orbis_users_to_companies',
+			'from' => 'user',
+			'to'   => 'orbis_company',
+			'title'       => array(
+				'from' => __( 'Companies', 'orbis-companies' ),
+				'to'   => __( 'Users', 'orbis-companies' ),
+			),
+			'from_labels' => array(
+				'singular_name' => __( 'User', 'orbis-companies' ),
+				'search_items'  => __( 'Search user', 'orbis-companies' ),
+				'not_found'     => __( 'No users found.', 'orbis-companies' ),
+				'create'        => __( 'Add User', 'orbis-companies' ),
+				'new_item'      => __( 'New User', 'orbis-companies' ),
+				'add_new_item'  => __( 'Add New User', 'orbis-companies' ),
+			),
+			'to_labels'   => array(
+				'singular_name' => __( 'Company', 'orbis-companies' ),
+				'search_items'  => __( 'Search company', 'orbis-companies' ),
+				'not_found'     => __( 'No companies found.', 'orbis-companies' ),
+				'create'        => __( 'Add Company', 'orbis-companies' ),
+				'new_item'      => __( 'New Company', 'orbis-companies' ),
+				'add_new_item'  => __( 'Add New Company', 'orbis-companies' ),
+			),
+		) );
 	}
 
 	/**
