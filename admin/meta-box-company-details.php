@@ -10,6 +10,7 @@ $kvk_number = get_post_meta( $post->ID, '_orbis_kvk_number', true );
 $vat_number = get_post_meta( $post->ID, '_orbis_vat_number', true );
 
 $email               = get_post_meta( $post->ID, '_orbis_email', true );
+$accounting_email    = get_post_meta( $post->ID, '_orbis_accounting_email', true );
 $invoice_email       = get_post_meta( $post->ID, '_orbis_invoice_email', true );
 $invoice_header_text = get_post_meta( $post->ID, '_orbis_invoice_header_text', true );
 $invoice_footer_text = get_post_meta( $post->ID, '_orbis_invoice_footer_text', true );
@@ -61,6 +62,14 @@ wp_nonce_field( 'orbis_save_company_details', 'orbis_company_details_meta_box_no
 			</th>
 			<td>
 				<input id="orbis_company_email" name="_orbis_email" value="<?php echo esc_attr( $orbis_company->get_email() ); ?>" type="email" size="42" />
+			</td>
+		</tr>
+		<tr>
+			<th scope="row">
+				<label for="_orbis_invoice_email"><?php esc_html_e( 'Accounting E-Mail', 'orbis-companies' ); ?></label>
+			</th>
+			<td>
+				<input id="_orbis_invoice_email" name="_orbis_accounting_email" value="<?php echo esc_attr( $accounting_email ); ?>" type="email" size="42" />
 			</td>
 		</tr>
 		<tr>

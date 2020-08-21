@@ -139,6 +139,7 @@ class Orbis_Projects_AdminCompanyPostType {
 			'_orbis_kvk_number'          => FILTER_SANITIZE_STRING,
 			'_orbis_vat_number'          => FILTER_SANITIZE_STRING,
 			'_orbis_email'               => FILTER_VALIDATE_EMAIL,
+			'_orbis_accounting_email'    => FILTER_VALIDATE_EMAIL,
 			'_orbis_invoice_email'       => FILTER_VALIDATE_EMAIL,
 			'_orbis_invoice_header_text' => FILTER_SANITIZE_STRING,
 			'_orbis_invoice_footer_text' => FILTER_SANITIZE_STRING,

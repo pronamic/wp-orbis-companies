@@ -5,96 +5,100 @@ msgstr ""
 "Project-Id-Version: Orbis Companies\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/orbis-companies\n"
 "POT-Creation-Date: 2016-11-29 11:18:34+00:00\n"
-"PO-Revision-Date: 2019-05-03 14:39+0100\n"
+"PO-Revision-Date: 2020-08-21 15:46+0200\n"
 "Last-Translator: Remco Tolsma <info@remcotolsma.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
 "Language: nl_NL\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.4\n"
+"X-Generator: Poedit 2.4.1\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: admin/meta-box-company-details.php:36
+#: admin/meta-box-company-details.php:37
 msgid "Orbis ID"
 msgstr "Orbis ID"
 
-#: admin/meta-box-company-details.php:44
+#: admin/meta-box-company-details.php:45
 #: classes/class-admin-company-post-type.php:34
 msgid "Registration Number"
 msgstr "Registratienummer"
 
-#: admin/meta-box-company-details.php:52
+#: admin/meta-box-company-details.php:53
 msgid "VAT Number"
 msgstr "Btw-nummer"
 
-#: admin/meta-box-company-details.php:60
+#: admin/meta-box-company-details.php:61
 msgid "E-Mail"
 msgstr "E-mailadres"
 
-#: admin/meta-box-company-details.php:68
+#: admin/meta-box-company-details.php:69
+msgid "Accounting E-Mail"
+msgstr "Administratie e-mailadres"
+
+#: admin/meta-box-company-details.php:77
 msgid "Invoice E-Mail"
 msgstr "Factuur e-mailadres"
 
-#: admin/meta-box-company-details.php:76
+#: admin/meta-box-company-details.php:85
 msgid "Invoice Header Text"
 msgstr "Factuur koptekst"
 
-#: admin/meta-box-company-details.php:84
+#: admin/meta-box-company-details.php:93
 msgid "Invoice Footer Text"
 msgstr "Factuur voettekst"
 
-#: admin/meta-box-company-details.php:92
+#: admin/meta-box-company-details.php:101
 msgid "Website"
 msgstr "Website"
 
-#: admin/meta-box-company-details.php:100
-#: admin/meta-box-company-details.php:103
+#: admin/meta-box-company-details.php:109
+#: admin/meta-box-company-details.php:112
 #: classes/class-admin-company-post-type.php:32
 msgid "Address"
 msgstr "Adres"
 
-#: admin/meta-box-company-details.php:105
+#: admin/meta-box-company-details.php:114
 msgid "Postcode"
 msgstr "Postcode"
 
-#: admin/meta-box-company-details.php:106
+#: admin/meta-box-company-details.php:115
 msgid "City"
 msgstr "Plaats"
 
-#: admin/meta-box-company-details.php:108
+#: admin/meta-box-company-details.php:117
 msgid "Country"
 msgstr "Land"
 
-#: admin/meta-box-company-details.php:113
+#: admin/meta-box-company-details.php:122
 msgid "IBAN"
 msgstr "IBAN"
 
-#: admin/meta-box-company-details.php:121
+#: admin/meta-box-company-details.php:130
 msgid "Twitter Username:"
 msgstr "Twitter gebruikersnaam:"
 
-#: admin/meta-box-company-details.php:129
+#: admin/meta-box-company-details.php:138
 msgid "Facebook URL:"
 msgstr "Facebook URL:"
 
-#: admin/meta-box-company-details.php:137
+#: admin/meta-box-company-details.php:146
 msgid "LinkedIn URL:"
 msgstr "LinkedIn URL:"
 
-#: admin/meta-box-company-details.php:145
+#: admin/meta-box-company-details.php:154
 msgid "Payment Method"
 msgstr "Betaalmethode"
 
-#: admin/meta-box-company-details.php:156
+#: admin/meta-box-company-details.php:165
 msgid "— Select Payment Method —"
 msgstr "— Selecteer betaalmethode —"
 
-#: admin/meta-box-company-details.php:167
+#: admin/meta-box-company-details.php:176
 msgid "Invoice Shipping Method"
 msgstr "Factuur verzendmethode"
 
-#: admin/meta-box-company-details.php:178
+#: admin/meta-box-company-details.php:187
 msgid "— Select Invoice Shipping Method —"
 msgstr "— Selecteer factuur verzendmethode —"
 
@@ -124,14 +128,17 @@ msgstr "Bedrijf details"
 
 #: classes/class-content-types.php:18 classes/class-content-types.php:20
 #: classes/class-content-types.php:32 classes/class-plugin.php:60
+#: classes/class-plugin.php:99
 msgid "Companies"
 msgstr "Bedrijven"
 
 #: classes/class-content-types.php:21 classes/class-plugin.php:79
+#: classes/class-plugin.php:111
 msgid "Company"
 msgstr "Bedrijf"
 
 #: classes/class-content-types.php:23 classes/class-plugin.php:84
+#: classes/class-plugin.php:116
 msgid "Add New Company"
 msgstr "Nieuw bedrijf toevoegen"
 
@@ -140,6 +147,7 @@ msgid "Edit Company"
 msgstr "Bedrijf bewerken"
 
 #: classes/class-content-types.php:25 classes/class-plugin.php:83
+#: classes/class-plugin.php:115
 msgid "New Company"
 msgstr "Nieuw bedrijf"
 
@@ -156,6 +164,7 @@ msgid "Search Companies"
 msgstr "Zoek bedrijven"
 
 #: classes/class-content-types.php:29 classes/class-plugin.php:81
+#: classes/class-plugin.php:113
 msgid "No companies found."
 msgstr "Geen bedrijven gevonden"
 
@@ -317,11 +326,11 @@ msgstr ""
 "zorgvuldig om met het verwijderen van verbonden contacten. In veel gevallen "
 "is het verwijderen van verbonden contacten niet wenselijk."
 
-#: classes/class-plugin.php:80
+#: classes/class-plugin.php:80 classes/class-plugin.php:112
 msgid "Search company"
 msgstr "Bedrijf zoeken"
 
-#: classes/class-plugin.php:82
+#: classes/class-plugin.php:82 classes/class-plugin.php:114
 msgid "Add Company"
 msgstr "Bedrijf toevoegen"
 
@@ -334,6 +343,38 @@ msgstr ""
 "Let op: deze contact werkt niet per se bij deze bedrijven. Ga zorgvuldig om "
 "met het verwijderen van verbonden bedrijven. In veel gevallen is het "
 "verwijderen van verbonden bedrijven niet wenselijk."
+
+#: classes/class-plugin.php:100
+msgid "Users"
+msgstr ""
+
+#: classes/class-plugin.php:103
+msgid "User"
+msgstr ""
+
+#: classes/class-plugin.php:104
+#, fuzzy
+msgid "Search user"
+msgstr "Status zoeken"
+
+#: classes/class-plugin.php:105
+#, fuzzy
+msgid "No users found."
+msgstr "Geen bedrijven gevonden"
+
+#: classes/class-plugin.php:106
+#, fuzzy
+msgid "Add User"
+msgstr "Nieuw bedrijf"
+
+#: classes/class-plugin.php:107
+msgid "New User"
+msgstr ""
+
+#: classes/class-plugin.php:108
+#, fuzzy
+msgid "Add New User"
+msgstr "Nieuw bedrijf"
 
 #. Plugin Name of the plugin/theme
 msgid "Orbis Companies"
@@ -413,9 +454,6 @@ msgstr "Betaalmethode"
 msgctxt "taxonomy singular name"
 msgid "Invoice Shipping Method"
 msgstr "Factuur verzendmethode"
-
-#~ msgid "Search Statuses"
-#~ msgstr "Status zoeken"
 
 #~ msgid "All Statuses"
 #~ msgstr "Alle statussen"

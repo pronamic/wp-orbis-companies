@@ -1,4 +1,4 @@
-# Copyright (C) 2019 Pronamic
+# Copyright (C) 2020 Pronamic
 # This file is distributed under the Copyright (c) Pronamic.
 msgid ""
 msgstr ""
@@ -8,91 +8,95 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: grunt-wp-i18n 0.5.4\n"
 
-#: admin/meta-box-company-details.php:36
+#: admin/meta-box-company-details.php:37
 msgid "Orbis ID"
 msgstr ""
 
-#: admin/meta-box-company-details.php:44
+#: admin/meta-box-company-details.php:45
 #: classes/class-admin-company-post-type.php:34
 msgid "Registration Number"
 msgstr ""
 
-#: admin/meta-box-company-details.php:52
+#: admin/meta-box-company-details.php:53
 msgid "VAT Number"
 msgstr ""
 
-#: admin/meta-box-company-details.php:60
+#: admin/meta-box-company-details.php:61
 msgid "E-Mail"
 msgstr ""
 
-#: admin/meta-box-company-details.php:68
+#: admin/meta-box-company-details.php:69
+msgid "Accounting E-Mail"
+msgstr ""
+
+#: admin/meta-box-company-details.php:77
 msgid "Invoice E-Mail"
 msgstr ""
 
-#: admin/meta-box-company-details.php:76
+#: admin/meta-box-company-details.php:85
 msgid "Invoice Header Text"
 msgstr ""
 
-#: admin/meta-box-company-details.php:84
+#: admin/meta-box-company-details.php:93
 msgid "Invoice Footer Text"
 msgstr ""
 
-#: admin/meta-box-company-details.php:92
+#: admin/meta-box-company-details.php:101
 msgid "Website"
 msgstr ""
 
-#: admin/meta-box-company-details.php:100
-#: admin/meta-box-company-details.php:103
+#: admin/meta-box-company-details.php:109
+#: admin/meta-box-company-details.php:112
 #: classes/class-admin-company-post-type.php:32
 msgid "Address"
 msgstr ""
 
-#: admin/meta-box-company-details.php:105
+#: admin/meta-box-company-details.php:114
 msgid "Postcode"
 msgstr ""
 
-#: admin/meta-box-company-details.php:106
+#: admin/meta-box-company-details.php:115
 msgid "City"
 msgstr ""
 
-#: admin/meta-box-company-details.php:108
+#: admin/meta-box-company-details.php:117
 msgid "Country"
 msgstr ""
 
-#: admin/meta-box-company-details.php:113
+#: admin/meta-box-company-details.php:122
 msgid "IBAN"
 msgstr ""
 
-#: admin/meta-box-company-details.php:121
+#: admin/meta-box-company-details.php:130
 msgid "Twitter Username:"
 msgstr ""
 
-#: admin/meta-box-company-details.php:129
+#: admin/meta-box-company-details.php:138
 msgid "Facebook URL:"
 msgstr ""
 
-#: admin/meta-box-company-details.php:137
+#: admin/meta-box-company-details.php:146
 msgid "LinkedIn URL:"
 msgstr ""
 
-#: admin/meta-box-company-details.php:145
+#: admin/meta-box-company-details.php:154
 msgid "Payment Method"
 msgstr ""
 
-#: admin/meta-box-company-details.php:156
+#: admin/meta-box-company-details.php:165
 msgid "— Select Payment Method —"
 msgstr ""
 
-#: admin/meta-box-company-details.php:167
+#: admin/meta-box-company-details.php:176
 msgid "Invoice Shipping Method"
 msgstr ""
 
-#: admin/meta-box-company-details.php:178
+#: admin/meta-box-company-details.php:187
 msgid "— Select Invoice Shipping Method —"
 msgstr ""
 
@@ -122,14 +126,17 @@ msgstr ""
 
 #: classes/class-content-types.php:18 classes/class-content-types.php:20
 #: classes/class-content-types.php:32 classes/class-plugin.php:60
+#: classes/class-plugin.php:99
 msgid "Companies"
 msgstr ""
 
 #: classes/class-content-types.php:21 classes/class-plugin.php:79
+#: classes/class-plugin.php:111
 msgid "Company"
 msgstr ""
 
 #: classes/class-content-types.php:23 classes/class-plugin.php:84
+#: classes/class-plugin.php:116
 msgid "Add New Company"
 msgstr ""
 
@@ -138,6 +145,7 @@ msgid "Edit Company"
 msgstr ""
 
 #: classes/class-content-types.php:25 classes/class-plugin.php:83
+#: classes/class-plugin.php:115
 msgid "New Company"
 msgstr ""
 
@@ -154,6 +162,7 @@ msgid "Search Companies"
 msgstr ""
 
 #: classes/class-content-types.php:29 classes/class-plugin.php:81
+#: classes/class-plugin.php:113
 msgid "No companies found."
 msgstr ""
 
@@ -312,11 +321,11 @@ msgid ""
 "cases, deleting connected contacts is not desirable."
 msgstr ""
 
-#: classes/class-plugin.php:80
+#: classes/class-plugin.php:80 classes/class-plugin.php:112
 msgid "Search company"
 msgstr ""
 
-#: classes/class-plugin.php:82
+#: classes/class-plugin.php:82 classes/class-plugin.php:114
 msgid "Add Company"
 msgstr ""
 
@@ -325,6 +334,34 @@ msgid ""
 "Please note: this contact does not necessarily work at these companies. "
 "Handle the removal of connected companies with great care. In many cases, "
 "deleting connected companies is not desirable."
+msgstr ""
+
+#: classes/class-plugin.php:100
+msgid "Users"
+msgstr ""
+
+#: classes/class-plugin.php:103
+msgid "User"
+msgstr ""
+
+#: classes/class-plugin.php:104
+msgid "Search user"
+msgstr ""
+
+#: classes/class-plugin.php:105
+msgid "No users found."
+msgstr ""
+
+#: classes/class-plugin.php:106
+msgid "Add User"
+msgstr ""
+
+#: classes/class-plugin.php:107
+msgid "New User"
+msgstr ""
+
+#: classes/class-plugin.php:108
+msgid "Add New User"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
