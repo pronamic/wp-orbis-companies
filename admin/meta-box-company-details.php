@@ -4,7 +4,7 @@ global $post;
 
 $orbis_company = new Orbis_Company( $post );
 
-$orbis_id   = get_post_meta( $post->ID, '_orbis_company_id', true );
+$orbis_id = get_post_meta( $post->ID, '_orbis_company_id', true );
 
 $kvk_number = get_post_meta( $post->ID, '_orbis_kvk_number', true );
 $vat_number = get_post_meta( $post->ID, '_orbis_vat_number', true );
@@ -158,15 +158,17 @@ wp_nonce_field( 'orbis_save_company_details', 'orbis_company_details_meta_box_no
 
 				$terms = get_the_terms( $post->ID, 'orbis_payment_method' );
 
-				$term = ( !$terms ) ? $terms : array_shift( $terms );
+				$term = ( ! $terms ) ? $terms : array_shift( $terms );
 
-				wp_dropdown_categories( array(
-					'name'             => 'tax_input[orbis_payment_method]',
-					'show_option_none' => __( '— Select Payment Method —', 'orbis-companies' ),
-					'hide_empty'       => false,
-					'selected'         => is_object( $term ) ? $term->term_id : false,
-					'taxonomy'         => 'orbis_payment_method',
-				) );
+				wp_dropdown_categories(
+					[
+						'name'             => 'tax_input[orbis_payment_method]',
+						'show_option_none' => __( '— Select Payment Method —', 'orbis-companies' ),
+						'hide_empty'       => false,
+						'selected'         => is_object( $term ) ? $term->term_id : false,
+						'taxonomy'         => 'orbis_payment_method',
+					] 
+				);
 
 				?>
 			</td>
@@ -180,15 +182,17 @@ wp_nonce_field( 'orbis_save_company_details', 'orbis_company_details_meta_box_no
 
 				$terms = get_the_terms( $post->ID, 'orbis_invoice_shipping_method' );
 
-				$term = ( !$terms ) ? $terms : array_shift( $terms );
+				$term = ( ! $terms ) ? $terms : array_shift( $terms );
 
-				wp_dropdown_categories( array(
-					'name'             => 'tax_input[orbis_invoice_shipping_method]',
-					'show_option_none' => __( '— Select Invoice Shipping Method —', 'orbis-companies' ),
-					'hide_empty'       => false,
-					'selected'         => is_object( $term ) ? $term->term_id : false,
-					'taxonomy'         => 'orbis_invoice_shipping_method',
-				) );
+				wp_dropdown_categories(
+					[
+						'name'             => 'tax_input[orbis_invoice_shipping_method]',
+						'show_option_none' => __( '— Select Invoice Shipping Method —', 'orbis-companies' ),
+						'hide_empty'       => false,
+						'selected'         => is_object( $term ) ? $term->term_id : false,
+						'taxonomy'         => 'orbis_invoice_shipping_method',
+					] 
+				);
 
 				?>
 			</td>

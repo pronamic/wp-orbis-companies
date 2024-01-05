@@ -5,7 +5,7 @@ class Orbis_Companies_ContentTypes {
 	 * Construct.
 	 */
 	public function __construct() {
-		add_action( 'init', array( $this, 'init' ) );
+		add_action( 'init', [ $this, 'init' ] );
 	}
 
 	/**
@@ -14,9 +14,9 @@ class Orbis_Companies_ContentTypes {
 	public function init() {
 		register_post_type(
 			'orbis_company',
-			array(
+			[
 				'label'           => __( 'Companies', 'orbis-companies' ),
-				'labels'          => array(
+				'labels'          => [
 					'name'               => __( 'Companies', 'orbis-companies' ),
 					'singular_name'      => __( 'Company', 'orbis-companies' ),
 					'add_new'            => _x( 'Add New', 'orbis_company', 'orbis-companies' ),
@@ -30,27 +30,27 @@ class Orbis_Companies_ContentTypes {
 					'not_found_in_trash' => __( 'No companies found in Trash.', 'orbis-companies' ),
 					'parent_item_colon'  => __( 'Parent Company:', 'orbis-companies' ),
 					'menu_name'          => __( 'Companies', 'orbis-companies' ),
-				),
+				],
 				'public'          => true,
 				'menu_position'   => 30,
 				'menu_icon'       => 'dashicons-building',
-				'capability_type' => array( 'orbis_company', 'orbis_companies' ),
-				'supports'        => array( 'title', 'editor', 'author', 'comments', 'thumbnail', 'custom-fields', 'revisions' ),
+				'capability_type' => [ 'orbis_company', 'orbis_companies' ],
+				'supports'        => [ 'title', 'editor', 'author', 'comments', 'thumbnail', 'custom-fields', 'revisions' ],
 				'has_archive'     => true,
 				'show_in_rest'    => true,
 				'rest_base'       => 'orbis/companies',
-				'rewrite'         => array(
+				'rewrite'         => [
 					'slug' => _x( 'companies', 'slug', 'orbis-companies' ),
-				),
-			)
+				],
+			]
 		);
 
 		register_taxonomy(
 			'orbis_company_category',
-			array( 'orbis_company' ),
-			array(
+			[ 'orbis_company' ],
+			[
 				'hierarchical' => true,
-				'labels'       => array(
+				'labels'       => [
 					'name'              => _x( 'Categories', 'taxonomy general name', 'orbis-companies' ),
 					'singular_name'     => _x( 'Category', 'taxonomy singular name', 'orbis-companies' ),
 					'search_items'      => __( 'Search Categories', 'orbis-companies' ),
@@ -62,21 +62,21 @@ class Orbis_Companies_ContentTypes {
 					'add_new_item'      => __( 'Add New Category', 'orbis-companies' ),
 					'new_item_name'     => __( 'New Category Name', 'orbis-companies' ),
 					'menu_name'         => __( 'Categories', 'orbis-companies' ),
-				),
+				],
 				'show_ui'      => true,
 				'query_var'    => true,
-				'rewrite'      => array(
+				'rewrite'      => [
 					'slug' => _x( 'company-category', 'slug', 'orbis-companies' ),
-				),
-			)
+				],
+			]
 		);
 
 		register_taxonomy(
 			'orbis_payment_method',
-			array( 'orbis_company' ),
-			array(
+			[ 'orbis_company' ],
+			[
 				'hierarchical' => true,
-				'labels'       => array(
+				'labels'       => [
 					'name'              => _x( 'Payment Methods', 'taxonomy general name', 'orbis-companies' ),
 					'singular_name'     => _x( 'Payment Method', 'taxonomy singular name', 'orbis-companies' ),
 					'search_items'      => __( 'Search Payment Methods', 'orbis-companies' ),
@@ -88,22 +88,22 @@ class Orbis_Companies_ContentTypes {
 					'add_new_item'      => __( 'Add New Payment Method', 'orbis-companies' ),
 					'new_item_name'     => __( 'New Payment Method Name', 'orbis-companies' ),
 					'menu_name'         => __( 'Payment Methods', 'orbis-companies' ),
-				),
+				],
 				'show_ui'      => true,
 				'query_var'    => true,
-				'rewrite'      => array(
+				'rewrite'      => [
 					'slug' => _x( 'payment-methods', 'slug', 'orbis-companies' ),
-				),
+				],
 				'meta_box_cb'  => false,
-			)
+			]
 		);
 
 		register_taxonomy(
 			'orbis_invoice_shipping_method',
-			array( 'orbis_company' ),
-			array(
+			[ 'orbis_company' ],
+			[
 				'hierarchical' => true,
-				'labels'       => array(
+				'labels'       => [
 					'name'              => _x( 'Invoice Shipping Methods', 'taxonomy general name', 'orbis-companies' ),
 					'singular_name'     => _x( 'Invoice Shipping Method', 'taxonomy singular name', 'orbis-companies' ),
 					'search_items'      => __( 'Search Invoice Shipping Methods', 'orbis-companies' ),
@@ -115,14 +115,14 @@ class Orbis_Companies_ContentTypes {
 					'add_new_item'      => __( 'Add New Invoice Shipping Method', 'orbis-companies' ),
 					'new_item_name'     => __( 'New Invoice Shipping Method Name', 'orbis-companies' ),
 					'menu_name'         => __( 'Invoice Shipping Methods', 'orbis-companies' ),
-				),
+				],
 				'show_ui'      => true,
 				'query_var'    => true,
-				'rewrite'      => array(
+				'rewrite'      => [
 					'slug' => _x( 'invoice-shipping-methods', 'slug', 'orbis-companies' ),
-				),
+				],
 				'meta_box_cb'  => false,
-			)
+			]
 		);
 	}
 }

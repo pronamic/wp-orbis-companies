@@ -14,9 +14,9 @@ class Orbis_Companies_Plugin extends Orbis_Plugin {
 		orbis_register_table( 'orbis_companies' );
 
 		// Actions
-		add_action( 'p2p_init', array( $this, 'p2p_init' ) );
+		add_action( 'p2p_init', [ $this, 'p2p_init' ] );
 
-		add_action( 'wp_ajax_company_id_suggest', array( $this, 'ajax_suggest_company_id' ) );
+		add_action( 'wp_ajax_company_id_suggest', [ $this, 'ajax_suggest_company_id' ] );
 
 		// Content Types
 		$this->content_types = new Orbis_Companies_ContentTypes();
@@ -36,13 +36,16 @@ class Orbis_Companies_Plugin extends Orbis_Plugin {
 	 */
 	public function install() {
 		// Tables
-		orbis_install_table( 'orbis_companies', '
+		orbis_install_table(
+			'orbis_companies',
+			'
 			id BIGINT(16) UNSIGNED NOT NULL AUTO_INCREMENT,
 			post_id BIGINT(20) UNSIGNED DEFAULT NULL,
 			name VARCHAR(128) NOT NULL,
 			e_mail VARCHAR(128) DEFAULT NULL,
 			PRIMARY KEY  (id)
-		' );
+		' 
+		);
 
 		// Install
 		parent::install();
@@ -52,70 +55,74 @@ class Orbis_Companies_Plugin extends Orbis_Plugin {
 	 * Posts to posts initialize
 	 */
 	public function p2p_init() {
-		p2p_register_connection_type( array(
-			'name' => 'orbis_persons_to_companies',
-			'from' => 'orbis_person',
-			'to'   => 'orbis_company',
-			'title'       => array(
-				'from' => __( 'Companies', 'orbis-companies' ),
-				'to'   => __( 'Contacts', 'orbis-companies' ),
-			),
-			'fields' => array(
-				'note' => array(
-					'title' => __( 'Note', 'orbis-companies' ),
-					'type'  => 'text',
-				),
-			),
-			'from_labels' => array(
-				'singular_name' => __( 'Contact', 'orbis-companies' ),
-				'search_items'  => __( 'Search contact', 'orbis-companies' ),
-				'not_found'     => __( 'No contacts found.', 'orbis-companies' ),
-				'create'        => __( 'Add Contact', 'orbis-companies' ),
-				'new_item'      => __( 'New Contact', 'orbis-companies' ),
-				'add_new_item'  => __( 'Add New Contact', 'orbis-companies' ),
-				'help'          => __( 'Please note: these are contacts who do not necessarily work at this company. Handle the removal of connected contacts with great care. In many cases, deleting connected contacts is not desirable.', 'orbis-companies' ),
-			),
-			'to_labels'   => array(
-				'singular_name' => __( 'Company', 'orbis-companies' ),
-				'search_items'  => __( 'Search company', 'orbis-companies' ),
-				'not_found'     => __( 'No companies found.', 'orbis-companies' ),
-				'create'        => __( 'Add Company', 'orbis-companies' ),
-				'new_item'      => __( 'New Company', 'orbis-companies' ),
-				'add_new_item'  => __( 'Add New Company', 'orbis-companies' ),
-				'help'          => __( 'Please note: this contact does not necessarily work at these companies. Handle the removal of connected companies with great care. In many cases, deleting connected companies is not desirable.', 'orbis-companies' ),
-			),
-		) );
+		p2p_register_connection_type(
+			[
+				'name'        => 'orbis_persons_to_companies',
+				'from'        => 'orbis_person',
+				'to'          => 'orbis_company',
+				'title'       => [
+					'from' => __( 'Companies', 'orbis-companies' ),
+					'to'   => __( 'Contacts', 'orbis-companies' ),
+				],
+				'fields'      => [
+					'note' => [
+						'title' => __( 'Note', 'orbis-companies' ),
+						'type'  => 'text',
+					],
+				],
+				'from_labels' => [
+					'singular_name' => __( 'Contact', 'orbis-companies' ),
+					'search_items'  => __( 'Search contact', 'orbis-companies' ),
+					'not_found'     => __( 'No contacts found.', 'orbis-companies' ),
+					'create'        => __( 'Add Contact', 'orbis-companies' ),
+					'new_item'      => __( 'New Contact', 'orbis-companies' ),
+					'add_new_item'  => __( 'Add New Contact', 'orbis-companies' ),
+					'help'          => __( 'Please note: these are contacts who do not necessarily work at this company. Handle the removal of connected contacts with great care. In many cases, deleting connected contacts is not desirable.', 'orbis-companies' ),
+				],
+				'to_labels'   => [
+					'singular_name' => __( 'Company', 'orbis-companies' ),
+					'search_items'  => __( 'Search company', 'orbis-companies' ),
+					'not_found'     => __( 'No companies found.', 'orbis-companies' ),
+					'create'        => __( 'Add Company', 'orbis-companies' ),
+					'new_item'      => __( 'New Company', 'orbis-companies' ),
+					'add_new_item'  => __( 'Add New Company', 'orbis-companies' ),
+					'help'          => __( 'Please note: this contact does not necessarily work at these companies. Handle the removal of connected companies with great care. In many cases, deleting connected companies is not desirable.', 'orbis-companies' ),
+				],
+			] 
+		);
 
 		/**
 		 * Posts 2 Users.
 		 *
 		 * @link https://github.com/scribu/wp-posts-to-posts/wiki/Posts-2-Users
 		 */
-		p2p_register_connection_type( array(
-			'name' => 'orbis_users_to_companies',
-			'from' => 'user',
-			'to'   => 'orbis_company',
-			'title'       => array(
-				'from' => __( 'Companies', 'orbis-companies' ),
-				'to'   => __( 'Users', 'orbis-companies' ),
-			),
-			'from_labels' => array(
-				'singular_name' => __( 'User', 'orbis-companies' ),
-				'search_items'  => __( 'Search user', 'orbis-companies' ),
-				'not_found'     => __( 'No users found.', 'orbis-companies' ),
-				'create'        => __( 'Add User', 'orbis-companies' ),
-				'new_item'      => __( 'New User', 'orbis-companies' ),
-				'add_new_item'  => __( 'Add New User', 'orbis-companies' ),
-			),
-			'to_labels'   => array(
-				'singular_name' => __( 'Company', 'orbis-companies' ),
-				'search_items'  => __( 'Search company', 'orbis-companies' ),
-				'not_found'     => __( 'No companies found.', 'orbis-companies' ),
-				'create'        => __( 'Add Company', 'orbis-companies' ),
-				'new_item'      => __( 'New Company', 'orbis-companies' ),
-				'add_new_item'  => __( 'Add New Company', 'orbis-companies' ),
-			),
-		) );
+		p2p_register_connection_type(
+			[
+				'name'        => 'orbis_users_to_companies',
+				'from'        => 'user',
+				'to'          => 'orbis_company',
+				'title'       => [
+					'from' => __( 'Companies', 'orbis-companies' ),
+					'to'   => __( 'Users', 'orbis-companies' ),
+				],
+				'from_labels' => [
+					'singular_name' => __( 'User', 'orbis-companies' ),
+					'search_items'  => __( 'Search user', 'orbis-companies' ),
+					'not_found'     => __( 'No users found.', 'orbis-companies' ),
+					'create'        => __( 'Add User', 'orbis-companies' ),
+					'new_item'      => __( 'New User', 'orbis-companies' ),
+					'add_new_item'  => __( 'Add New User', 'orbis-companies' ),
+				],
+				'to_labels'   => [
+					'singular_name' => __( 'Company', 'orbis-companies' ),
+					'search_items'  => __( 'Search company', 'orbis-companies' ),
+					'not_found'     => __( 'No companies found.', 'orbis-companies' ),
+					'create'        => __( 'Add Company', 'orbis-companies' ),
+					'new_item'      => __( 'New Company', 'orbis-companies' ),
+					'add_new_item'  => __( 'Add New Company', 'orbis-companies' ),
+				],
+			] 
+		);
 	}
 
 	/**
@@ -134,8 +141,7 @@ class Orbis_Companies_Plugin extends Orbis_Plugin {
 				$wpdb->orbis_companies AS company
 			WHERE
 				company.name LIKE %s
-			;"
-		;
+			;";
 
 		$like = '%' . $wpdb->esc_like( $term ) . '%';
 

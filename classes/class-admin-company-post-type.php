@@ -12,21 +12,21 @@ class Orbis_Projects_AdminCompanyPostType {
 	public function __construct( $plugin ) {
 		$this->plugin = $plugin;
 
-		add_filter( 'manage_edit-' . self::POST_TYPE . '_columns' , array( $this, 'edit_columns' ) );
+		add_filter( 'manage_edit-' . self::POST_TYPE . '_columns', [ $this, 'edit_columns' ] );
 
-		add_action( 'manage_' . self::POST_TYPE . '_posts_custom_column', array( $this, 'custom_columns' ), 10, 2 );
+		add_action( 'manage_' . self::POST_TYPE . '_posts_custom_column', [ $this, 'custom_columns' ], 10, 2 );
 
-		add_action( 'add_meta_boxes', array( $this, 'add_meta_boxes' ) );
+		add_action( 'add_meta_boxes', [ $this, 'add_meta_boxes' ] );
 
-		add_action( 'save_post_' . self::POST_TYPE, array( $this, 'save_company' ), 10, 2 );
-		add_action( 'save_post_' . self::POST_TYPE, array( $this, 'save_company_sync' ), 500, 2 );
+		add_action( 'save_post_' . self::POST_TYPE, [ $this, 'save_company' ], 10, 2 );
+		add_action( 'save_post_' . self::POST_TYPE, [ $this, 'save_company_sync' ], 500, 2 );
 	}
 
 	/**
 	 * Edit columns.
 	 */
 	public function edit_columns( $columns ) {
-		$columns = array(
+		$columns = [
 			'cb'                       => '<input type="checkbox" />',
 			'title'                    => __( 'Title', 'orbis-companies' ),
 			'orbis_company_address'    => __( 'Address', 'orbis-companies' ),
@@ -35,7 +35,7 @@ class Orbis_Projects_AdminCompanyPostType {
 			'author'                   => __( 'Author', 'orbis-companies' ),
 			'comments'                 => __( 'Comments', 'orbis-companies' ),
 			'date'                     => __( 'Date', 'orbis-companies' ),
-		);
+		];
 
 		return $columns;
 	}
@@ -95,7 +95,7 @@ class Orbis_Projects_AdminCompanyPostType {
 		add_meta_box(
 			'orbis_company_details',
 			__( 'Company Details', 'orbis-companies' ),
-			array( $this, 'meta_box' ),
+			[ $this, 'meta_box' ],
 			'orbis_company',
 			'normal',
 			'high'
@@ -114,7 +114,7 @@ class Orbis_Projects_AdminCompanyPostType {
 	/**
 	 * Save project.
 	 *
-	 * @param int $post_id
+	 * @param int   $post_id
 	 * @param mixed $post
 	 */
 	public function save_company( $post_id, $post ) {
@@ -135,7 +135,7 @@ class Orbis_Projects_AdminCompanyPostType {
 		}
 
 		// OK
-		$definition = array(
+		$definition = [
 			'_orbis_kvk_number'          => FILTER_SANITIZE_STRING,
 			'_orbis_vat_number'          => FILTER_SANITIZE_STRING,
 			'_orbis_email'               => FILTER_VALIDATE_EMAIL,
@@ -152,7 +152,7 @@ class Orbis_Projects_AdminCompanyPostType {
 			'_orbis_twitter'             => FILTER_SANITIZE_STRING,
 			'_orbis_facebook'            => FILTER_SANITIZE_STRING,
 			'_orbis_linkedin'            => FILTER_SANITIZE_STRING,
-		);
+		];
 
 		$data = filter_input_array( INPUT_POST, $definition );
 
@@ -198,14 +198,14 @@ class Orbis_Projects_AdminCompanyPostType {
 		if ( empty( $orbis_id ) ) {
 			$result = $wpdb->insert(
 				$wpdb->orbis_companies,
-				array(
+				[
 					'post_id' => $post_id,
 					'name'    => $post->post_title,
-				) ,
-				array(
+				],
+				[
 					'%d',
 					'%s',
-				)
+				]
 			);
 
 			if ( false !== $result ) {
@@ -216,10 +216,10 @@ class Orbis_Projects_AdminCompanyPostType {
 		} else {
 			$result = $wpdb->update(
 				$wpdb->orbis_companies,
-				array( 'name' => $post->post_title ) ,
-				array( 'id' => $orbis_id ) ,
-				array( '%s' ) ,
-				array( '%d' )
+				[ 'name' => $post->post_title ],
+				[ 'id' => $orbis_id ],
+				[ '%s' ],
+				[ '%d' ]
 			);
 		}
 	}
