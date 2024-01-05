@@ -1,5 +1,5 @@
 {
-	"name": "orbis-companies",
+	"name": "pronamic/wp-orbis-companies",
 	"description": "The Orbis Companies plugin extends your Orbis environment with the option to manage companies.",
 	"version": "1.0.0",
 	"keywords": [
@@ -33,16 +33,17 @@
 	"autoload": {
 		"classmap": ["classes/"]
 	},
-	"require": {
-
-	},
 	"require-dev": {
-		"squizlabs/php_codesniffer": "^2.7",
-		"wp-coding-standards/wpcs": "^0.10.0"
+		"pronamic/wp-coding-standards": "^2.1"
 	},
 	"scripts": {
 		"post-autoload-dump": [
 			"if [[ -d vendor/wp-coding-standards/wpcs ]]; then vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs; fi"
 		]
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
 	}
 }
