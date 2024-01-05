@@ -19,12 +19,12 @@ GitHub URI: https://github.com/wp-orbis/wp-orbis-companies
 */
 
 /**
- * Autoload
+ * Autoload.
  */
-require_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload_packages.php';
 
 /**
- * Bootstrap
+ * Bootstrap.
  */
 function orbis_companies_bootstrap() {
 	global $orbis_companies_plugin;
