@@ -1,37 +1,35 @@
 {
-  "name": "orbis-companies",
-  "version": "1.0.0",
-  "description": "The Orbis Companies plugin extends your Orbis environment with the option to manage companies.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wp-orbis/wp-orbis-companies.git"
-  },
-  "keywords": [
-    "orbis",
-    "deal",
-    "companies",
-    "offer",
-    "offers"
-  ],
-  "author": {
-    "name": "Pronamic",
-    "email": "info@pronamic.nl",
-    "url": "http://www.pronamic.nl/"
-  },
-  "contributors": [
-    {
-      "name": "Remco Tolsma",
-      "email": "info@remcotolsma.nl",
-      "url": "http://www.remcotolsma.nl/"
-    }
-  ],
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/wp-orbis/wp-orbis-companies/issues",
-    "email": "support@pronamic.nl"
-  },
-  "homepage": "https://github.com/wp-orbis/wp-orbis-companies",
-  "devDependencies": {
-
-  }
+	"name": "orbis-companies",
+	"version": "1.0.0",
+	"description": "The Orbis Companies plugin extends your Orbis environment with the option to manage companies.",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/wp-orbis/wp-orbis-companies.git"
+	},
+	"keywords": [
+		"orbis",
+		"deal",
+		"companies",
+		"offer",
+		"offers"
+	],
+	"author": {
+		"name": "Pronamic",
+		"email": "info@pronamic.nl",
+		"url": "http://www.pronamic.nl/"
+	},
+	"contributors": [
+		{
+			"name": "Remco Tolsma",
+			"email": "info@remcotolsma.nl",
+			"url": "http://www.remcotolsma.nl/"
+		}
+	],
+	"license": "GPL-3.0",
+	"bugs": {
+		"url": "https://github.com/wp-orbis/wp-orbis-companies/issues",
+		"email": "support@pronamic.nl"
+	},
+	"homepage": "https://github.com/wp-orbis/wp-orbis-companies",
+	"devDependencies": {}
 }
