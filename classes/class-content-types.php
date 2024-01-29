@@ -43,12 +43,6 @@ class Orbis_Companies_ContentTypes {
 					'thumbnail',
 					'custom-fields',
 					'revisions',
-					/**
-					 * Pronamic Moneybird.
-					 * 
-					 * @link https://github.com/pronamic/wp-pronamic-moneybird
-					 */
-					'pronamic_moneybird_contact',
 				],
 				'has_archive'     => true,
 				'show_in_rest'    => true,
