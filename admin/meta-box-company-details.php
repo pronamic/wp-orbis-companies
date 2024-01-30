@@ -1,8 +1,18 @@
 <?php
+/**
+ * Meta box company details
+ *
+ * @author    Pronamic <info@pronamic.eu>
+ * @copyright 2005-2024 Pronamic
+ * @license   GPL-2.0-or-later
+ * @package   Pronamic\Orbis\Companies
+ */
+
+namespace Pronamic\Orbis\Companies;
 
 global $post;
 
-$orbis_company = new Orbis_Company( $post );
+$orbis_company = new Company( $post );
 
 $orbis_id = get_post_meta( $post->ID, '_orbis_company_id', true );
 

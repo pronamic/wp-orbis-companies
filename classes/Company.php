@@ -1,15 +1,19 @@
 <?php
+/**
+ * Company
+ *
+ * @author    Pronamic <info@pronamic.eu>
+ * @copyright 2005-2024 Pronamic
+ * @license   GPL-2.0-or-later
+ * @package   Pronamic\Orbis\Companies
+ */
+
+namespace Pronamic\Orbis\Companies;
 
 /**
- * Title: Orbis company
- * Description:
- * Copyright: Copyright (c) 2005 - 2016
- * Company: Pronamic
- *
- * @author Remco Tolsma
- * @version 1.0
+ * Company class
  */
-class Orbis_Company {
+class Company {
 	private $post;
 
 	

@@ -1,6 +1,19 @@
 <?php
+/**
+ * Admin company post type 
+ *
+ * @author    Pronamic <info@pronamic.eu>
+ * @copyright 2005-2024 Pronamic
+ * @license   GPL-2.0-or-later
+ * @package   Pronamic\Orbis\Companies
+ */
 
-class Orbis_Projects_AdminCompanyPostType {
+namespace Pronamic\Orbis\Companies;
+
+/**
+ * Admin company post type class
+ */
+class AdminCompanyPostType {
 	/**
 	 * Post type.
 	 */
@@ -108,7 +121,7 @@ class Orbis_Projects_AdminCompanyPostType {
 	 * @param mixed $post
 	 */
 	public function meta_box( $post ) {
-		$this->plugin->plugin_include( 'admin/meta-box-company-details.php' );
+		include __DIR__ . '/../admin/meta-box-company-details.php';
 	}
 
 	/**

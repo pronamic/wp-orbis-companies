@@ -1,6 +1,19 @@
 <?php
+/**
+ * Content types
+ *
+ * @author    Pronamic <info@pronamic.eu>
+ * @copyright 2005-2024 Pronamic
+ * @license   GPL-2.0-or-later
+ * @package   Pronamic\Orbis\Companies
+ */
 
-class Orbis_Companies_ContentTypes {
+namespace Pronamic\Orbis\Companies;
+
+/**
+ * Content types class
+ */
+class ContentTypes {
 	/**
 	 * Construct.
 	 */

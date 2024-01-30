@@ -41,6 +41,6 @@ require_once __DIR__ . '/vendor/autoload_packages.php';
 
 		global $orbis_companies_plugin;
 
-		$orbis_companies_plugin = new Orbis_Companies_Plugin( __FILE__ );
+		$orbis_companies_plugin = new Plugin();
 	}
 );

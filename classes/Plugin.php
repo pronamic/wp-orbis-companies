@@ -1,29 +1,46 @@
 <?php
+/**
+ * Plugin
+ *
+ * @author    Pronamic <info@pronamic.eu>
+ * @copyright 2005-2024 Pronamic
+ * @license   GPL-2.0-or-later
+ * @package   Pronamic\Orbis\Companies
+ */
 
-class Orbis_Companies_Plugin extends Orbis_Plugin {
-	public function __construct( $file ) {
-		parent::__construct( $file );
+namespace Pronamic\Orbis\Companies;
 
-		$this->set_name( 'orbis_companies' );
-		$this->set_db_version( '1.1.0' );
+/**
+ * Plugin class
+ */
+class Plugin {
+	public function __construct() {
+		add_action( 'init', [ $this, 'init' ] );
 
-		// Load text domain
-		$this->load_textdomain( 'orbis-companies', '/languages/' );
-
-		// Tables
-		orbis_register_table( 'orbis_companies' );
-
-		// Actions
 		add_action( 'p2p_init', [ $this, 'p2p_init' ] );
 
 		add_action( 'wp_ajax_company_id_suggest', [ $this, 'ajax_suggest_company_id' ] );
 
 		// Content Types
-		$this->content_types = new Orbis_Companies_ContentTypes();
+		$this->content_types = new ContentTypes();
 
 		// Admin
 		if ( is_admin() ) {
-			$this->admin = new Orbis_Companies_Admin( $this );
+			$this->admin = new Admin( $this );
+		}
+	}
+
+	public function init() {
+		global $wpdb;
+
+		$wpdb->orbis_companies = $wpdb->prefix . 'orbis_companies';
+
+		$version = '1.1.0';
+
+		if ( \get_option( 'orbis_companies_db_version' ) !== $version ) {
+			$this->install();
+
+			\update_option( 'orbis_companies_db_version', $version );
 		}
 	}
 
@@ -35,20 +52,25 @@ class Orbis_Companies_Plugin extends Orbis_Plugin {
 	 * @see Orbis_Plugin::install()
 	 */
 	public function install() {
-		// Tables
-		orbis_install_table(
-			'orbis_companies',
-			'
-			id BIGINT(16) UNSIGNED NOT NULL AUTO_INCREMENT,
-			post_id BIGINT(20) UNSIGNED DEFAULT NULL,
-			name VARCHAR(128) NOT NULL,
-			e_mail VARCHAR(128) DEFAULT NULL,
-			PRIMARY KEY  (id)
-		' 
-		);
+		global $wpdb;
 
-		// Install
-		parent::install();
+		$charset_collate = $wpdb->get_charset_collate();
+
+		$sql = "
+			CREATE TABLE $wpdb->orbis_companies (
+				id BIGINT(16) UNSIGNED NOT NULL AUTO_INCREMENT,
+				post_id BIGINT(20) UNSIGNED DEFAULT NULL,
+				name VARCHAR(128) NOT NULL,
+				e_mail VARCHAR(128) DEFAULT NULL,
+				PRIMARY KEY  (id)
+			) $charset_collate;
+		";
+
+		require_once ABSPATH . 'wp-admin/includes/upgrade.php';
+
+		\dbDelta( $sql );
+
+		\maybe_convert_table_to_utf8mb4( $wpdb->orbis_companies );
 	}
 
 	/**

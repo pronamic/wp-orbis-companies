@@ -30,10 +30,20 @@
 		"source": "https://github.com/pronamic/wp-orbis"
 	},
 	"type": "wordpress-plugin",
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"automattic/jetpack-autoloader": true
+		},
+		"wp-slug": "orbis-companies"
+	},
 	"autoload": {
-		"classmap": [
-			"classes/"
-		]
+		"psr-4": {
+			"Pronamic\\Orbis\\Companies\\": "classes/"
+		}
+	},
+	"require": {
+		"automattic/jetpack-autoloader": "^3.0"
 	},
 	"require-dev": {
 		"pronamic/wp-coding-standards": "^2.1",
@@ -43,14 +53,5 @@
 		"post-autoload-dump": [
 			"if [[ -d vendor/wp-coding-standards/wpcs ]]; then vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs; fi"
 		]
-	},
-	"config": {
-		"allow-plugins": {
-			"dealerdirect/phpcodesniffer-composer-installer": true,
-			"automattic/jetpack-autoloader": true
-		}
-	},
-	"require": {
-		"automattic/jetpack-autoloader": "^3.0"
 	}
 }
