@@ -1,442 +1,443 @@
-# Copyright (C) 2020 Pronamic
-# This file is distributed under the Copyright (c) Pronamic.
+# Copyright (C) 2024 Pronamic
+# This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
 "Project-Id-Version: Orbis Companies 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/orbis-companies\n"
-"POT-Creation-Date: 2016-11-29 11:18:34+00:00\n"
-"MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"X-Generator: grunt-wp-i18n 0.5.4\n"
-
-#: admin/meta-box-company-details.php:37
-msgid "Orbis ID"
-msgstr ""
-
-#: admin/meta-box-company-details.php:45
-#: classes/class-admin-company-post-type.php:34
-msgid "Registration Number"
-msgstr ""
-
-#: admin/meta-box-company-details.php:53
-msgid "VAT Number"
-msgstr ""
-
-#: admin/meta-box-company-details.php:61
-msgid "E-Mail"
-msgstr ""
-
-#: admin/meta-box-company-details.php:69
-msgid "Accounting E-Mail"
-msgstr ""
-
-#: admin/meta-box-company-details.php:77
-msgid "Invoice E-Mail"
-msgstr ""
-
-#: admin/meta-box-company-details.php:85
-msgid "Invoice Header Text"
-msgstr ""
-
-#: admin/meta-box-company-details.php:93
-msgid "Invoice Footer Text"
-msgstr ""
-
-#: admin/meta-box-company-details.php:101
-msgid "Website"
-msgstr ""
-
-#: admin/meta-box-company-details.php:109
-#: admin/meta-box-company-details.php:112
-#: classes/class-admin-company-post-type.php:32
-msgid "Address"
-msgstr ""
-
-#: admin/meta-box-company-details.php:114
-msgid "Postcode"
-msgstr ""
-
-#: admin/meta-box-company-details.php:115
-msgid "City"
-msgstr ""
-
-#: admin/meta-box-company-details.php:117
-msgid "Country"
-msgstr ""
-
-#: admin/meta-box-company-details.php:122
-msgid "IBAN"
-msgstr ""
-
-#: admin/meta-box-company-details.php:130
-msgid "Twitter Username:"
-msgstr ""
-
-#: admin/meta-box-company-details.php:138
-msgid "Facebook URL:"
-msgstr ""
-
-#: admin/meta-box-company-details.php:146
-msgid "LinkedIn URL:"
-msgstr ""
-
-#: admin/meta-box-company-details.php:154
-msgid "Payment Method"
-msgstr ""
-
-#: admin/meta-box-company-details.php:165
-msgid "— Select Payment Method —"
-msgstr ""
-
-#: admin/meta-box-company-details.php:176
-msgid "Invoice Shipping Method"
-msgstr ""
-
-#: admin/meta-box-company-details.php:187
-msgid "— Select Invoice Shipping Method —"
-msgstr ""
-
-#: classes/class-admin-company-post-type.php:31
-msgid "Title"
-msgstr ""
-
-#: classes/class-admin-company-post-type.php:33
-msgid "Online"
-msgstr ""
-
-#: classes/class-admin-company-post-type.php:35
-msgid "Author"
-msgstr ""
-
-#: classes/class-admin-company-post-type.php:36
-msgid "Comments"
-msgstr ""
-
-#: classes/class-admin-company-post-type.php:37
-msgid "Date"
-msgstr ""
-
-#: classes/class-admin-company-post-type.php:97
-msgid "Company Details"
-msgstr ""
-
-#: classes/class-content-types.php:18 classes/class-content-types.php:20
-#: classes/class-content-types.php:32 classes/class-plugin.php:60
-#: classes/class-plugin.php:99
-msgid "Companies"
-msgstr ""
-
-#: classes/class-content-types.php:21 classes/class-plugin.php:79
-#: classes/class-plugin.php:111
-msgid "Company"
-msgstr ""
-
-#: classes/class-content-types.php:23 classes/class-plugin.php:84
-#: classes/class-plugin.php:116
-msgid "Add New Company"
-msgstr ""
-
-#: classes/class-content-types.php:24
-msgid "Edit Company"
-msgstr ""
-
-#: classes/class-content-types.php:25 classes/class-plugin.php:83
-#: classes/class-plugin.php:115
-msgid "New Company"
-msgstr ""
-
-#: classes/class-content-types.php:26
-msgid "All Companies"
-msgstr ""
-
-#: classes/class-content-types.php:27
-msgid "View Company"
-msgstr ""
-
-#: classes/class-content-types.php:28
-msgid "Search Companies"
-msgstr ""
-
-#: classes/class-content-types.php:29 classes/class-plugin.php:81
-#: classes/class-plugin.php:113
-msgid "No companies found."
-msgstr ""
-
-#: classes/class-content-types.php:30
-msgid "No companies found in Trash."
-msgstr ""
-
-#: classes/class-content-types.php:31
-msgid "Parent Company:"
-msgstr ""
-
-#: classes/class-content-types.php:56
-msgid "Search Categories"
-msgstr ""
-
-#: classes/class-content-types.php:57
-msgid "All Categories"
-msgstr ""
-
-#: classes/class-content-types.php:58
-msgid "Parent Category"
-msgstr ""
-
-#: classes/class-content-types.php:59
-msgid "Parent Category:"
-msgstr ""
-
-#: classes/class-content-types.php:60
-msgid "Edit Category"
-msgstr ""
-
-#: classes/class-content-types.php:61
-msgid "Update Category"
-msgstr ""
-
-#: classes/class-content-types.php:62
-msgid "Add New Category"
-msgstr ""
-
-#: classes/class-content-types.php:63
-msgid "New Category Name"
-msgstr ""
-
-#: classes/class-content-types.php:64
-msgid "Categories"
-msgstr ""
-
-#: classes/class-content-types.php:82
-msgid "Search Payment Methods"
-msgstr ""
-
-#: classes/class-content-types.php:83
-msgid "All Payment Methods"
-msgstr ""
-
-#: classes/class-content-types.php:84
-msgid "Parent Payment Method"
-msgstr ""
-
-#: classes/class-content-types.php:85
-msgid "Parent Payment Method:"
-msgstr ""
-
-#: classes/class-content-types.php:86
-msgid "Edit Payment Method"
-msgstr ""
-
-#: classes/class-content-types.php:87
-msgid "Update Payment Method"
-msgstr ""
-
-#: classes/class-content-types.php:88
-msgid "Add New Payment Method"
-msgstr ""
-
-#: classes/class-content-types.php:89
-msgid "New Payment Method Name"
-msgstr ""
-
-#: classes/class-content-types.php:90
-msgid "Payment Methods"
-msgstr ""
-
-#: classes/class-content-types.php:109
-msgid "Search Invoice Shipping Methods"
-msgstr ""
-
-#: classes/class-content-types.php:110
-msgid "All Invoice Shipping Methods"
-msgstr ""
-
-#: classes/class-content-types.php:111
-msgid "Parent Invoice Shipping Method"
-msgstr ""
-
-#: classes/class-content-types.php:112
-msgid "Parent Invoice Shipping Method:"
-msgstr ""
-
-#: classes/class-content-types.php:113
-msgid "Edit Invoice Shipping Method"
-msgstr ""
-
-#: classes/class-content-types.php:114
-msgid "Update Invoice Shipping Method"
-msgstr ""
-
-#: classes/class-content-types.php:115
-msgid "Add New Invoice Shipping Method"
-msgstr ""
-
-#: classes/class-content-types.php:116
-msgid "New Invoice Shipping Method Name"
-msgstr ""
-
-#: classes/class-content-types.php:117
-msgid "Invoice Shipping Methods"
-msgstr ""
-
-#: classes/class-plugin.php:61
-msgid "Contacts"
-msgstr ""
-
-#: classes/class-plugin.php:65
-msgid "Note"
-msgstr ""
-
-#: classes/class-plugin.php:70
-msgid "Contact"
-msgstr ""
-
-#: classes/class-plugin.php:71
-msgid "Search contact"
-msgstr ""
-
-#: classes/class-plugin.php:72
-msgid "No contacts found."
-msgstr ""
-
-#: classes/class-plugin.php:73
-msgid "Add Contact"
-msgstr ""
-
-#: classes/class-plugin.php:74
-msgid "New Contact"
-msgstr ""
-
-#: classes/class-plugin.php:75
-msgid "Add New Contact"
-msgstr ""
-
-#: classes/class-plugin.php:76
-msgid ""
-"Please note: these are contacts who do not necessarily work at this "
-"company. Handle the removal of connected contacts with great care. In many "
-"cases, deleting connected contacts is not desirable."
-msgstr ""
-
-#: classes/class-plugin.php:80 classes/class-plugin.php:112
-msgid "Search company"
-msgstr ""
-
-#: classes/class-plugin.php:82 classes/class-plugin.php:114
-msgid "Add Company"
-msgstr ""
-
-#: classes/class-plugin.php:85
-msgid ""
-"Please note: this contact does not necessarily work at these companies. "
-"Handle the removal of connected companies with great care. In many cases, "
-"deleting connected companies is not desirable."
-msgstr ""
-
-#: classes/class-plugin.php:100
-msgid "Users"
-msgstr ""
-
-#: classes/class-plugin.php:103
-msgid "User"
-msgstr ""
-
-#: classes/class-plugin.php:104
-msgid "Search user"
-msgstr ""
-
-#: classes/class-plugin.php:105
-msgid "No users found."
-msgstr ""
-
-#: classes/class-plugin.php:106
-msgid "Add User"
-msgstr ""
-
-#: classes/class-plugin.php:107
-msgid "New User"
-msgstr ""
-
-#: classes/class-plugin.php:108
-msgid "Add New User"
-msgstr ""
-
-#. Plugin Name of the plugin/theme
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-01-30T14:12:40+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: orbis-companies\n"
+
+#. Plugin Name of the plugin
 msgid "Orbis Companies"
 msgstr ""
 
-#. Plugin URI of the plugin/theme
-msgid "https://www.pronamic.eu/plugins/orbis-companies/"
+#. Plugin URI of the plugin
+msgid "https://wp.pronamic.directory/plugins/orbis-companies/"
 msgstr ""
 
-#. Description of the plugin/theme
-msgid ""
-"The Orbis Companies plugin extends your Orbis environment with the option "
-"to manage companies."
+#. Description of the plugin
+msgid "The Orbis Companies plugin extends your Orbis environment with the option to manage companies."
 msgstr ""
 
-#. Author of the plugin/theme
+#. Author of the plugin
 msgid "Pronamic"
 msgstr ""
 
-#. Author URI of the plugin/theme
+#. Author URI of the plugin
 msgid "https://www.pronamic.eu/"
 msgstr ""
 
-#: classes/class-content-types.php:22
+#: admin/meta-box-company-details.php:47
+msgid "Orbis ID"
+msgstr ""
+
+#: admin/meta-box-company-details.php:55
+#: classes/AdminCompanyPostType.php:47
+msgid "Registration Number"
+msgstr ""
+
+#: admin/meta-box-company-details.php:63
+msgid "VAT Number"
+msgstr ""
+
+#: admin/meta-box-company-details.php:71
+msgid "E-Mail"
+msgstr ""
+
+#: admin/meta-box-company-details.php:79
+msgid "Accounting E-Mail"
+msgstr ""
+
+#: admin/meta-box-company-details.php:87
+msgid "Invoice E-Mail"
+msgstr ""
+
+#: admin/meta-box-company-details.php:95
+msgid "Invoice Header Text"
+msgstr ""
+
+#: admin/meta-box-company-details.php:103
+msgid "Invoice Footer Text"
+msgstr ""
+
+#: admin/meta-box-company-details.php:111
+msgid "Website"
+msgstr ""
+
+#: admin/meta-box-company-details.php:119
+#: admin/meta-box-company-details.php:122
+#: classes/AdminCompanyPostType.php:45
+msgid "Address"
+msgstr ""
+
+#: admin/meta-box-company-details.php:124
+msgid "Postcode"
+msgstr ""
+
+#: admin/meta-box-company-details.php:125
+msgid "City"
+msgstr ""
+
+#: admin/meta-box-company-details.php:127
+msgid "Country"
+msgstr ""
+
+#: admin/meta-box-company-details.php:132
+msgid "IBAN"
+msgstr ""
+
+#: admin/meta-box-company-details.php:140
+msgid "Twitter Username:"
+msgstr ""
+
+#: admin/meta-box-company-details.php:148
+msgid "Facebook URL:"
+msgstr ""
+
+#: admin/meta-box-company-details.php:156
+msgid "LinkedIn URL:"
+msgstr ""
+
+#: admin/meta-box-company-details.php:164
+msgid "Payment Method"
+msgstr ""
+
+#: admin/meta-box-company-details.php:176
+msgid "— Select Payment Method —"
+msgstr ""
+
+#: admin/meta-box-company-details.php:188
+msgid "Invoice Shipping Method"
+msgstr ""
+
+#: admin/meta-box-company-details.php:200
+msgid "— Select Invoice Shipping Method —"
+msgstr ""
+
+#: classes/AdminCompanyPostType.php:44
+msgid "Title"
+msgstr ""
+
+#: classes/AdminCompanyPostType.php:46
+msgid "Online"
+msgstr ""
+
+#: classes/AdminCompanyPostType.php:48
+msgid "Author"
+msgstr ""
+
+#: classes/AdminCompanyPostType.php:49
+msgid "Comments"
+msgstr ""
+
+#: classes/AdminCompanyPostType.php:50
+msgid "Date"
+msgstr ""
+
+#: classes/AdminCompanyPostType.php:110
+msgid "Company Details"
+msgstr ""
+
+#: classes/ContentTypes.php:31
+#: classes/ContentTypes.php:33
+#: classes/ContentTypes.php:45
+#: classes/Plugin.php:86
+#: classes/Plugin.php:127
+msgid "Companies"
+msgstr ""
+
+#: classes/ContentTypes.php:34
+#: classes/Plugin.php:105
+#: classes/Plugin.php:139
+msgid "Company"
+msgstr ""
+
+#: classes/ContentTypes.php:35
 msgctxt "orbis_company"
 msgid "Add New"
 msgstr ""
 
-#: classes/class-content-types.php:43
+#: classes/ContentTypes.php:36
+#: classes/Plugin.php:110
+#: classes/Plugin.php:144
+msgid "Add New Company"
+msgstr ""
+
+#: classes/ContentTypes.php:37
+msgid "Edit Company"
+msgstr ""
+
+#: classes/ContentTypes.php:38
+#: classes/Plugin.php:109
+#: classes/Plugin.php:143
+msgid "New Company"
+msgstr ""
+
+#: classes/ContentTypes.php:39
+msgid "All Companies"
+msgstr ""
+
+#: classes/ContentTypes.php:40
+msgid "View Company"
+msgstr ""
+
+#: classes/ContentTypes.php:41
+msgid "Search Companies"
+msgstr ""
+
+#: classes/ContentTypes.php:42
+#: classes/Plugin.php:107
+#: classes/Plugin.php:141
+msgid "No companies found."
+msgstr ""
+
+#: classes/ContentTypes.php:43
+msgid "No companies found in Trash."
+msgstr ""
+
+#: classes/ContentTypes.php:44
+msgid "Parent Company:"
+msgstr ""
+
+#: classes/ContentTypes.php:64
 msgctxt "slug"
 msgid "companies"
 msgstr ""
 
-#: classes/class-content-types.php:69
-msgctxt "slug"
-msgid "company-category"
-msgstr ""
-
-#: classes/class-content-types.php:95
-msgctxt "slug"
-msgid "payment-methods"
-msgstr ""
-
-#: classes/class-content-types.php:122
-msgctxt "slug"
-msgid "invoice-shipping-methods"
-msgstr ""
-
-#: classes/class-content-types.php:54
+#: classes/ContentTypes.php:75
 msgctxt "taxonomy general name"
 msgid "Categories"
 msgstr ""
 
-#: classes/class-content-types.php:80
-msgctxt "taxonomy general name"
-msgid "Payment Methods"
-msgstr ""
-
-#: classes/class-content-types.php:107
-msgctxt "taxonomy general name"
-msgid "Invoice Shipping Methods"
-msgstr ""
-
-#: classes/class-content-types.php:55
+#: classes/ContentTypes.php:76
 msgctxt "taxonomy singular name"
 msgid "Category"
 msgstr ""
 
-#: classes/class-content-types.php:81
+#: classes/ContentTypes.php:77
+msgid "Search Categories"
+msgstr ""
+
+#: classes/ContentTypes.php:78
+msgid "All Categories"
+msgstr ""
+
+#: classes/ContentTypes.php:79
+msgid "Parent Category"
+msgstr ""
+
+#: classes/ContentTypes.php:80
+msgid "Parent Category:"
+msgstr ""
+
+#: classes/ContentTypes.php:81
+msgid "Edit Category"
+msgstr ""
+
+#: classes/ContentTypes.php:82
+msgid "Update Category"
+msgstr ""
+
+#: classes/ContentTypes.php:83
+msgid "Add New Category"
+msgstr ""
+
+#: classes/ContentTypes.php:84
+msgid "New Category Name"
+msgstr ""
+
+#: classes/ContentTypes.php:85
+msgid "Categories"
+msgstr ""
+
+#: classes/ContentTypes.php:90
+msgctxt "slug"
+msgid "company-category"
+msgstr ""
+
+#: classes/ContentTypes.php:101
+msgctxt "taxonomy general name"
+msgid "Payment Methods"
+msgstr ""
+
+#: classes/ContentTypes.php:102
 msgctxt "taxonomy singular name"
 msgid "Payment Method"
 msgstr ""
 
-#: classes/class-content-types.php:108
+#: classes/ContentTypes.php:103
+msgid "Search Payment Methods"
+msgstr ""
+
+#: classes/ContentTypes.php:104
+msgid "All Payment Methods"
+msgstr ""
+
+#: classes/ContentTypes.php:105
+msgid "Parent Payment Method"
+msgstr ""
+
+#: classes/ContentTypes.php:106
+msgid "Parent Payment Method:"
+msgstr ""
+
+#: classes/ContentTypes.php:107
+msgid "Edit Payment Method"
+msgstr ""
+
+#: classes/ContentTypes.php:108
+msgid "Update Payment Method"
+msgstr ""
+
+#: classes/ContentTypes.php:109
+msgid "Add New Payment Method"
+msgstr ""
+
+#: classes/ContentTypes.php:110
+msgid "New Payment Method Name"
+msgstr ""
+
+#: classes/ContentTypes.php:111
+msgid "Payment Methods"
+msgstr ""
+
+#: classes/ContentTypes.php:116
+msgctxt "slug"
+msgid "payment-methods"
+msgstr ""
+
+#: classes/ContentTypes.php:128
+msgctxt "taxonomy general name"
+msgid "Invoice Shipping Methods"
+msgstr ""
+
+#: classes/ContentTypes.php:129
 msgctxt "taxonomy singular name"
 msgid "Invoice Shipping Method"
+msgstr ""
+
+#: classes/ContentTypes.php:130
+msgid "Search Invoice Shipping Methods"
+msgstr ""
+
+#: classes/ContentTypes.php:131
+msgid "All Invoice Shipping Methods"
+msgstr ""
+
+#: classes/ContentTypes.php:132
+msgid "Parent Invoice Shipping Method"
+msgstr ""
+
+#: classes/ContentTypes.php:133
+msgid "Parent Invoice Shipping Method:"
+msgstr ""
+
+#: classes/ContentTypes.php:134
+msgid "Edit Invoice Shipping Method"
+msgstr ""
+
+#: classes/ContentTypes.php:135
+msgid "Update Invoice Shipping Method"
+msgstr ""
+
+#: classes/ContentTypes.php:136
+msgid "Add New Invoice Shipping Method"
+msgstr ""
+
+#: classes/ContentTypes.php:137
+msgid "New Invoice Shipping Method Name"
+msgstr ""
+
+#: classes/ContentTypes.php:138
+msgid "Invoice Shipping Methods"
+msgstr ""
+
+#: classes/ContentTypes.php:143
+msgctxt "slug"
+msgid "invoice-shipping-methods"
+msgstr ""
+
+#: classes/Plugin.php:87
+msgid "Contacts"
+msgstr ""
+
+#: classes/Plugin.php:91
+msgid "Note"
+msgstr ""
+
+#: classes/Plugin.php:96
+msgid "Contact"
+msgstr ""
+
+#: classes/Plugin.php:97
+msgid "Search contact"
+msgstr ""
+
+#: classes/Plugin.php:98
+msgid "No contacts found."
+msgstr ""
+
+#: classes/Plugin.php:99
+msgid "Add Contact"
+msgstr ""
+
+#: classes/Plugin.php:100
+msgid "New Contact"
+msgstr ""
+
+#: classes/Plugin.php:101
+msgid "Add New Contact"
+msgstr ""
+
+#: classes/Plugin.php:102
+msgid "Please note: these are contacts who do not necessarily work at this company. Handle the removal of connected contacts with great care. In many cases, deleting connected contacts is not desirable."
+msgstr ""
+
+#: classes/Plugin.php:106
+#: classes/Plugin.php:140
+msgid "Search company"
+msgstr ""
+
+#: classes/Plugin.php:108
+#: classes/Plugin.php:142
+msgid "Add Company"
+msgstr ""
+
+#: classes/Plugin.php:111
+msgid "Please note: this contact does not necessarily work at these companies. Handle the removal of connected companies with great care. In many cases, deleting connected companies is not desirable."
+msgstr ""
+
+#: classes/Plugin.php:128
+msgid "Users"
+msgstr ""
+
+#: classes/Plugin.php:131
+msgid "User"
+msgstr ""
+
+#: classes/Plugin.php:132
+msgid "Search user"
+msgstr ""
+
+#: classes/Plugin.php:133
+msgid "No users found."
+msgstr ""
+
+#: classes/Plugin.php:134
+msgid "Add User"
+msgstr ""
+
+#: classes/Plugin.php:135
+msgid "New User"
+msgstr ""
+
+#: classes/Plugin.php:136
+msgid "Add New User"
 msgstr ""
