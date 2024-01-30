@@ -50,8 +50,14 @@
 		"pronamic/pronamic-cli": "^1.1"
 	},
 	"scripts": {
-		"post-autoload-dump": [
-			"if [[ -d vendor/wp-coding-standards/wpcs ]]; then vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs; fi"
+		"build": "vendor/bin/pronamic wp-build",
+		"phpcs": "vendor/bin/phpcs",
+		"translate": [
+			"@build",
+			"rsync --recursive --delete --verbose ./build/project/languages/ ./languages/"
+		],
+		"qa": [
+			"@phpcs"
 		]
 	}
 }
