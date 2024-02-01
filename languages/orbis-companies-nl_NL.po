@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Orbis Companies\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/orbis-companies\n"
-"POT-Creation-Date: 2024-01-30T18:56:20+00:00\n"
-"PO-Revision-Date: 2024-01-30 19:57+0100\n"
+"POT-Creation-Date: 2024-02-01T08:16:17+00:00\n"
+"PO-Revision-Date: 2024-02-01 09:16+0100\n"
 "Last-Translator: Remco Tolsma <info@remcotolsma.nl>\n"
 "Language-Team: Pronamic <info@pronamic.nl>\n"
 "Language: nl_NL\n"
@@ -39,88 +39,84 @@ msgstr "Pronamic"
 msgid "https://www.pronamic.eu/"
 msgstr "https://www.pronamic.nl/"
 
-#: admin/meta-box-company-details.php:47
+#: admin/meta-box-company-details.php:46
 msgid "Orbis ID"
 msgstr "Orbis ID"
 
-#: admin/meta-box-company-details.php:55 classes/AdminCompanyPostType.php:47
+#: admin/meta-box-company-details.php:54 classes/AdminCompanyPostType.php:47
 msgid "Registration Number"
 msgstr "Registratienummer"
 
-#: admin/meta-box-company-details.php:63
+#: admin/meta-box-company-details.php:62
 msgid "VAT Number"
 msgstr "Btw-nummer"
 
-#: admin/meta-box-company-details.php:71
+#: admin/meta-box-company-details.php:70
 msgid "E-Mail"
 msgstr "E-mailadres"
 
-#: admin/meta-box-company-details.php:79
+#: admin/meta-box-company-details.php:78
 msgid "Accounting E-Mail"
 msgstr "Administratie e-mailadres"
 
-#: admin/meta-box-company-details.php:87
+#: admin/meta-box-company-details.php:86
 msgid "Invoice E-Mail"
 msgstr "Factuur e-mailadres"
 
-#: admin/meta-box-company-details.php:95
-msgid "Invoice Header Text"
-msgstr "Factuur koptekst"
+#: admin/meta-box-company-details.php:94
+msgid "Invoice reference"
+msgstr "Factuurreferentie"
 
-#: admin/meta-box-company-details.php:103
-msgid "Invoice Footer Text"
-msgstr "Factuur voettekst"
-
-#: admin/meta-box-company-details.php:111
+#: admin/meta-box-company-details.php:102
 msgid "Website"
 msgstr "Website"
 
-#: admin/meta-box-company-details.php:119
-#: admin/meta-box-company-details.php:122 classes/AdminCompanyPostType.php:45
+#: admin/meta-box-company-details.php:110
+#: admin/meta-box-company-details.php:113 classes/AdminCompanyPostType.php:45
 msgid "Address"
 msgstr "Adres"
 
-#: admin/meta-box-company-details.php:124
+#: admin/meta-box-company-details.php:115
 msgid "Postcode"
 msgstr "Postcode"
 
-#: admin/meta-box-company-details.php:125
+#: admin/meta-box-company-details.php:116
 msgid "City"
 msgstr "Plaats"
 
-#: admin/meta-box-company-details.php:127
+#: admin/meta-box-company-details.php:118
 msgid "Country"
 msgstr "Land"
 
-#: admin/meta-box-company-details.php:132
+#: admin/meta-box-company-details.php:123
 msgid "IBAN"
 msgstr "IBAN"
 
-#: admin/meta-box-company-details.php:140
+#: admin/meta-box-company-details.php:131
 msgid "Twitter Username:"
 msgstr "Twitter gebruikersnaam:"
 
-#: admin/meta-box-company-details.php:148
+#: admin/meta-box-company-details.php:139
 msgid "Facebook URL:"
 msgstr "Facebook URL:"
 
-#: admin/meta-box-company-details.php:156
+#: admin/meta-box-company-details.php:147
 msgid "LinkedIn URL:"
 msgstr "LinkedIn URL:"
 
-#: admin/meta-box-company-details.php:164
+#: admin/meta-box-company-details.php:155
 msgid "Payment Method"
 msgstr "Betaalmethode"
 
-#: admin/meta-box-company-details.php:176
+#: admin/meta-box-company-details.php:167
 msgid "— Select Payment Method —"
 msgstr "— Selecteer betaalmethode —"
 
-#: admin/meta-box-company-details.php:188
+#: admin/meta-box-company-details.php:179
 msgid "Invoice Shipping Method"
 msgstr "Factuur verzendmethode"
 
-#: admin/meta-box-company-details.php:200
+#: admin/meta-box-company-details.php:191
 msgid "— Select Invoice Shipping Method —"
 msgstr "— Selecteer factuur verzendmethode —"
 
@@ -443,6 +439,12 @@ msgstr "Nieuwe gebruiker"
 #: classes/Plugin.php:136
 msgid "Add New User"
 msgstr "Nieuw gebruiker toevoegen"
+
+#~ msgid "Invoice Header Text"
+#~ msgstr "Factuur koptekst"
+
+#~ msgid "Invoice Footer Text"
+#~ msgstr "Factuur voettekst"
 
 #~ msgid "https://www.pronamic.eu/plugins/orbis-companies/"
 #~ msgstr "https://www.pronamic.eu/plugins/orbis-companies/"
