@@ -19,12 +19,11 @@ $orbis_id = get_post_meta( $post->ID, '_orbis_company_id', true );
 $kvk_number = get_post_meta( $post->ID, '_orbis_kvk_number', true );
 $vat_number = get_post_meta( $post->ID, '_orbis_vat_number', true );
 
-$email               = get_post_meta( $post->ID, '_orbis_email', true );
-$accounting_email    = get_post_meta( $post->ID, '_orbis_accounting_email', true );
-$invoice_email       = get_post_meta( $post->ID, '_orbis_invoice_email', true );
-$invoice_header_text = get_post_meta( $post->ID, '_orbis_invoice_header_text', true );
-$invoice_footer_text = get_post_meta( $post->ID, '_orbis_invoice_footer_text', true );
-$website             = get_post_meta( $post->ID, '_orbis_website', true );
+$email             = get_post_meta( $post->ID, '_orbis_email', true );
+$accounting_email  = get_post_meta( $post->ID, '_orbis_accounting_email', true );
+$invoice_email     = get_post_meta( $post->ID, '_orbis_invoice_email', true );
+$invoice_reference = get_post_meta( $post->ID, '_orbis_invoice_reference', true );
+$website           = get_post_meta( $post->ID, '_orbis_website', true );
 
 $address  = get_post_meta( $post->ID, '_orbis_address', true );
 $postcode = get_post_meta( $post->ID, '_orbis_postcode', true );
@@ -92,18 +91,10 @@ wp_nonce_field( 'orbis_save_company_details', 'orbis_company_details_meta_box_no
 		</tr>
 		<tr>
 			<th scope="row">
-				<label for="_orbis_invoice_header_text"><?php esc_html_e( 'Invoice Header Text', 'orbis-companies' ); ?></label>
+				<label for="_orbis_invoice_reference"><?php esc_html_e( 'Invoice reference', 'orbis-companies' ); ?></label>
 			</th>
 			<td>
-				<textarea id="_orbis_invoice_header_text" name="_orbis_invoice_header_text" rows="2" cols="60"><?php echo esc_textarea( $invoice_header_text ); ?></textarea>
-			</td>
-		</tr>
-		<tr>
-			<th scope="row">
-				<label for="_orbis_invoice_footer_text"><?php esc_html_e( 'Invoice Footer Text', 'orbis-companies' ); ?></label>
-			</th>
-			<td>
-				<textarea id="_orbis_invoice_footer_text" name="_orbis_invoice_footer_text" rows="2" cols="60"><?php echo esc_textarea( $invoice_footer_text ); ?></textarea>
+				<textarea id="_orbis_invoice_reference" name="_orbis_invoice_reference" rows="2" cols="60"><?php echo esc_textarea( $invoice_reference ); ?></textarea>
 			</td>
 		</tr>
 		<tr>
