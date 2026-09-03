@@ -14,9 +14,13 @@ namespace Pronamic\Orbis\Companies;
  * Company class
  */
 class Company {
+	/**
+	 * Post.
+	 *
+	 * @var \WP_Post|null
+	 */
 	private $post;
 
-	
 	/**
 	 * Constructs and initialize an Orbis plugin
 	 *

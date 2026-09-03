@@ -15,7 +15,23 @@ namespace Pronamic\Orbis\Companies;
  */
 class Admin {
 	/**
+	 * Plugin.
+	 *
+	 * @var Plugin
+	 */
+	private $plugin;
+
+	/**
+	 * Company post type.
+	 *
+	 * @var AdminCompanyPostType
+	 */
+	private $company_post_type;
+
+	/**
 	 * Construct.
+	 *
+	 * @param Plugin $plugin Plugin.
 	 */
 	public function __construct( $plugin ) {
 		$this->plugin = $plugin;

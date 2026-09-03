@@ -20,7 +20,16 @@ class AdminCompanyPostType {
 	const POST_TYPE = 'orbis_company';
 
 	/**
+	 * Plugin.
+	 *
+	 * @var Plugin
+	 */
+	private $plugin;
+
+	/**
 	 * Construct.
+	 *
+	 * @param Plugin $plugin Plugin.
 	 */
 	public function __construct( $plugin ) {
 		$this->plugin = $plugin;
