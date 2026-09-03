@@ -14,6 +14,23 @@ namespace Pronamic\Orbis\Companies;
  * Plugin class
  */
 class Plugin {
+	/**
+	 * Content types.
+	 *
+	 * @var ContentTypes
+	 */
+	public $content_types;
+
+	/**
+	 * Admin.
+	 *
+	 * @var Admin|null
+	 */
+	public $admin;
+
+	/**
+	 * Construct.
+	 */
 	public function __construct() {
 		add_action( 'init', [ $this, 'init' ] );
 
@@ -30,6 +47,9 @@ class Plugin {
 		}
 	}
 
+	/**
+	 * Initialize.
+	 */
 	public function init() {
 		global $wpdb;
 
