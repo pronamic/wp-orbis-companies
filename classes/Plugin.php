@@ -173,7 +173,8 @@ class Plugin {
 	public function ajax_suggest_company_id() {
 		global $wpdb;
 
-		$term = filter_input( INPUT_GET, 'term', FILTER_SANITIZE_STRING );
+		$term = filter_input( INPUT_GET, 'term', FILTER_UNSAFE_RAW );
+		$term = ( null === $term ) ? '' : sanitize_text_field( wp_unslash( $term ) );
 
 		$query = "
 			SELECT
