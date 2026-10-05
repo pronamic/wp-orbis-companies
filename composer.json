@@ -30,6 +30,7 @@
 		"source": "https://github.com/pronamic/wp-orbis"
 	},
 	"type": "wordpress-plugin",
+	"abandoned": "pronamic/wp-orbis-organizations",
 	"config": {
 		"allow-plugins": {
 			"dealerdirect/phpcodesniffer-composer-installer": true,
